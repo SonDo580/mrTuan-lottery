@@ -28,9 +28,9 @@ header {
 
 .header-right button {
   height: 40px;
-  padding: 5px 15px;
   border: none;
   font-weight: bold;
+  color: white;
 }
 
 .header-right button:hover {
@@ -39,7 +39,7 @@ header {
 
 .header-right button.login {
   background-color: red;
-  color: white;
+  padding: 5px 15px;
 }
 
 .header-right button.login:hover {
@@ -49,8 +49,60 @@ header {
 
 .header-right button.signup {
   background-color: yellow;
+  color: black;
+  padding: 5px 15px;
 }
 
 .header-right button.signup:hover {
   background-color: gainsboro;
+}
+
+.header-right .bottom-line {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-right img {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  margin-right: 5px;
+}
+
+.header-right button.share {
+  background-color: lightcoral;
+  font-size: 1.05rem;
+  margin-right: 30px;
+  border-radius: 30px;
+  padding: 0 10px;
+  height: 30px;
+}
+
+.header-right button.share:hover {
+  background-color: green;
+}
+
+.header-right button.fb-login {
+  background-color: darkorchid;
+  margin-right: 5px;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-right button.fb-login:hover {
+    background-color: blue;
+}
+
+.header-right button.zalo-login {
+  background-color: violet;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-right button.zalo-login:hover {
+    background-color: cornflowerblue;
 }
