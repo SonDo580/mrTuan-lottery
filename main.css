@@ -2,6 +2,7 @@ body {
   padding: 0 120px;
 }
 
+/* HEADER */
 header {
   display: flex;
   align-items: flex-end;
@@ -110,7 +111,9 @@ header {
 .header-right button.zalo-login:hover {
     background-color: cornflowerblue;
 }
+/* END HEADER */
 
+/* NAVBAR */
 nav ul {
     list-style: none;
     background-color: black;
@@ -123,6 +126,7 @@ nav ul {
 
 nav li {
     padding: 15px;
+    position: relative;
 }
 
 nav li:hover {
@@ -138,3 +142,11 @@ nav a {
 nav i {
     font-size: 0.8rem;
 }
+
+nav .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* END NAVBAR */
