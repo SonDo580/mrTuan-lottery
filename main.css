@@ -1,12 +1,56 @@
 body {
-    padding: 0 40px;
+  padding: 0 120px;
 }
 
 header {
-    display: flex;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header-left {
+  flex: 1;
 }
 
 .header-left img {
-    width: 250px;
-    aspect-ratio: auto;
+  width: 250px;
+  aspect-ratio: auto;
+}
+
+.header-right {
+  flex: 2;
+  text-align: right;
+}
+
+.header-right input {
+  height: 25px;
+  padding: 5px;
+}
+
+.header-right button {
+  height: 40px;
+  padding: 5px 15px;
+  border: none;
+  font-weight: bold;
+}
+
+.header-right button:hover {
+  cursor: pointer;
+}
+
+.header-right button.login {
+  background-color: red;
+  color: white;
+}
+
+.header-right button.login:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+.header-right button.signup {
+  background-color: yellow;
+}
+
+.header-right button.signup:hover {
+  background-color: gainsboro;
 }
