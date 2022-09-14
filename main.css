@@ -106,3 +106,31 @@ header {
 .header-right button.zalo-login:hover {
     background-color: cornflowerblue;
 }
+
+nav ul {
+    list-style: none;
+    background-color: black;
+    color: white;
+    padding-left: 0;
+    font-size: 1.2rem;
+
+    display: flex;
+}
+
+nav li {
+    padding: 15px;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav i {
+    font-size: 0.8rem;
+}
