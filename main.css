@@ -21,6 +21,10 @@ header {
   text-align: right;
 }
 
+.header-right p {
+    margin-top: 0;
+}
+
 .header-right input {
   height: 25px;
   padding: 5px;
