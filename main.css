@@ -1,0 +1,12 @@
+body {
+    padding: 0 40px;
+}
+
+header {
+    display: flex;
+}
+
+.header-left img {
+    width: 250px;
+    aspect-ratio: auto;
+}
