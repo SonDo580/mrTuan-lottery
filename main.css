@@ -147,6 +147,7 @@ nav .list {
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: black;
+    width: max-content;
 }
-
 /* END NAVBAR */
