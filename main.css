@@ -149,5 +149,19 @@ nav .list {
     left: 0;
     background-color: black;
     width: max-content;
+    display: none;
+}
+
+nav li:hover .list {
+  display: block;
+}
+
+nav .list p {
+  margin: 0;
+  padding: 10px;
+}
+
+nav .list p:hover {
+  background-color: red;
 }
 /* END NAVBAR */
