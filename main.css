@@ -23,7 +23,7 @@ header {
 }
 
 .header-right p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .header-right input {
@@ -97,7 +97,7 @@ header {
 }
 
 .header-right button.fb-login:hover {
-    background-color: blue;
+  background-color: blue;
 }
 
 .header-right button.zalo-login {
@@ -109,47 +109,47 @@ header {
 }
 
 .header-right button.zalo-login:hover {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 /* END HEADER */
 
 /* NAVBAR */
 nav ul {
-    list-style: none;
-    background-color: black;
-    color: white;
-    padding-left: 0;
-    font-size: 1.2rem;
+  list-style: none;
+  background-color: black;
+  color: white;
+  padding-left: 0;
+  font-size: 1.2rem;
 
-    display: flex;
+  display: flex;
 }
 
 nav li {
-    padding: 15px;
-    position: relative;
+  padding: 15px;
+  position: relative;
 }
 
 nav li:hover {
-    cursor: pointer;
-    background-color: red;
+  cursor: pointer;
+  background-color: red;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav i {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 nav .list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: black;
-    width: max-content;
-    display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  width: max-content;
+  display: none;
 }
 
 nav li:hover .list {
@@ -165,3 +165,60 @@ nav .list p:hover {
   background-color: red;
 }
 /* END NAVBAR */
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 0 40px;
+  font-size: .9rem;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .policy ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .policy li {
+  margin-bottom: 5px;
+}
+
+footer .policy a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .policy a:hover {
+  text-decoration: underline;
+}
+
+footer .customer p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+footer .customer a {
+  color: violet;
+}
+
+.footer-bottom p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-bottom a {
+  color: violet;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+}
+
+footer .copyright {
+  text-align: center;
+}
+/* END FOOTER */
