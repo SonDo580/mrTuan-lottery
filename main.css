@@ -250,13 +250,14 @@ section.slider .owl-nav button {
   top: 35%;
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: white !important;
+  border: 2px solid orange !important;
   border-radius: 50% !important;
 }
 
 section.slider .owl-nav button span {
-  font-size: 2.5rem;
-  color: white;
+  font-size: 2rem;
+  color: orange;
 }
 
 section.slider .owl-nav .owl-prev {
@@ -265,6 +266,17 @@ section.slider .owl-nav .owl-prev {
 
 section.slider .owl-nav .owl-next {
   right: -30px;
+}
+
+section.slider .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid orange;
+} 
+
+section.slider .owl-dots .owl-dot.active span {
+  background-color: orange;
 }
 /* END SLIDER */
 
