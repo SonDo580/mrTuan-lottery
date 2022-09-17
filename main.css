@@ -179,11 +179,6 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.footer-top .connect img {
-  width: 30px;
-  aspect-ratio: auto;
-}
-
 footer .policy ul {
   list-style: none;
   padding-left: 0;
@@ -200,6 +195,30 @@ footer .policy a {
 
 footer .policy a:hover {
   text-decoration: underline;
+}
+
+footer .connect img {
+  width: 30px;
+  aspect-ratio: auto;
+}
+
+footer .payment img {
+  height: 30px;
+  aspect-ratio: auto;
+}
+
+footer .payment .vnpay {
+  background-color: white;
+  text-align: center;
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer .payment .vnpay img {
+  height: 40px;
 }
 
 footer .customer p {
