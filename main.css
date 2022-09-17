@@ -179,6 +179,11 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.footer-top .connect img {
+  width: 30px;
+  aspect-ratio: auto;
+}
+
 footer .policy ul {
   list-style: none;
   padding-left: 0;
