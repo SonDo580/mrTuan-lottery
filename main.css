@@ -245,3 +245,13 @@ footer .copyright {
   text-align: center;
 }
 /* END FOOTER */
+
+/* FIXED ICON*/
+.fixed .zalo {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 60px;
+  height: auto;
+}
+/* END FIXED ICON */
