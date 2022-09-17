@@ -166,6 +166,17 @@ nav .list p:hover {
 }
 /* END NAVBAR */
 
+/* BANNER */
+section.banner img {
+  width: 100%;
+  display: none;
+}
+
+section.banner img.active {
+  display: block;
+}
+/* END BANNER */
+
 /* FOOTER */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
