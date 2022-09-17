@@ -273,12 +273,62 @@ section.slider .owl-dots .owl-dot span {
   height: 15px;
   background-color: white;
   border: 1px solid orange;
-} 
+}
 
 section.slider .owl-dots .owl-dot.active span {
   background-color: orange;
 }
 /* END SLIDER */
+
+/* PROCESS */
+section.process {
+  background-color: aqua;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+section.process h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: normal;
+}
+
+section.process > p {
+  font-size: 1.2rem;
+}
+
+section.process .steps {
+  display: flex;
+  gap: 5px;
+  padding: 0 50px;
+}
+
+section.process .step {
+  color: white;
+  padding: 0 10px;
+  width: 25%;
+  font-size: 1.2rem;
+}
+
+section.process .step1 {
+  background-color: orange;
+}
+section.process .step2 {
+  background-color: gray;
+}
+section.process .step3 {
+  background-color: blue;
+}
+section.process .step4 {
+  background-color: coral;
+}
+
+section.process .step h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* END PROCESS */
 
 /* FOOTER */
 footer {
