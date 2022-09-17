@@ -282,6 +282,7 @@ section.slider .owl-dots .owl-dot.active span {
 
 /* PROCESS */
 section.process {
+  background-image: url(./image/process/background.jpg);
   background-color: aqua;
   text-align: center;
   padding-bottom: 20px;
