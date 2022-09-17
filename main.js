@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
+
 const bannerImages = document.querySelectorAll("section.banner img");
 setInterval(() => {
   for (let image of bannerImages) {
