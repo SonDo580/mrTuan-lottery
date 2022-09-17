@@ -1,5 +1,5 @@
 body {
-  padding: 0 120px;
+  padding: 0 150px;
 }
 
 /* HEADER */
@@ -120,6 +120,7 @@ nav ul {
   color: white;
   padding-left: 0;
   font-size: 1.2rem;
+  margin-bottom: 0;
 
   display: flex;
 }
@@ -167,8 +168,13 @@ nav .list p:hover {
 /* END NAVBAR */
 
 /* BANNER */
+section.banner {
+  margin-top: 2px;
+}
+
 section.banner img {
   width: 100%;
+  height: auto;
   display: none;
 }
 
