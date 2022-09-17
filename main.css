@@ -187,6 +187,7 @@ section.banner img.active {
 section.slider {
   padding: 0 10px;
   margin-top: 20px;
+  position: relative;
 }
 
 section.slider .card {
@@ -242,6 +243,28 @@ section.slider .card .play a {
   display: inline-block;
   padding: 10px 15px;
   border-radius: 10px;
+}
+
+section.slider .owl-nav button {
+  position: absolute;
+  top: 35%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 50% !important;
+}
+
+section.slider .owl-nav button span {
+  font-size: 2.5rem;
+  color: white;
+}
+
+section.slider .owl-nav .owl-prev {
+  left: -30px;
+}
+
+section.slider .owl-nav .owl-next {
+  right: -30px;
 }
 /* END SLIDER */
 
