@@ -194,12 +194,21 @@ section.slider .card {
   text-align: center;
   border-radius: 30px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 section.slider .card img {
   width: 150px;
   aspect-ratio: auto;
   margin: 0 auto;
+}
+
+section.slider .card .badge {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 80px;
+  height: auto;
 }
 
 section.slider .card p {
@@ -241,7 +250,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 0 40px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .footer-top {
