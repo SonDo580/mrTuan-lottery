@@ -184,6 +184,11 @@ section.banner img.active {
 /* END BANNER */
 
 /* SLIDER */
+section.slider {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
 section.slider .card {
   background-color: orange;
   text-align: center;
@@ -198,7 +203,7 @@ section.slider .card img {
 }
 
 section.slider .card p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 section.slider .card .price {
