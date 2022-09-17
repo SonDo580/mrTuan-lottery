@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
 
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,9 +14,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./main.css" />
 
-    <script src="./main.js" defer></script>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <header>
@@ -74,9 +81,11 @@
     </nav>
 
     <section class="banner">
-      <img class="active" src="./image/banner/banner1.jpg" alt="banner1">
-      <img src="./image/banner/banner2.jpg" alt="banner2">
+      <img class="active" src="./image/banner/banner1.jpg" alt="banner1" />
+      <img src="./image/banner/banner2.jpg" alt="banner2" />
     </section>
+
+    <section class="slider"></section>
 
     <footer>
       <div class="footer-top">
@@ -148,5 +157,18 @@
         ><img class="zalo" src="./image/fixed/zalo-icon.png" alt="zalo-icon"
       /></a>
     </div>
+
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Carousel -->
+    <script src="./owlcarousel/owl.carousel.js"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>
