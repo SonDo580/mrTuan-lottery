@@ -183,6 +183,54 @@ section.banner img.active {
 }
 /* END BANNER */
 
+/* SLIDER */
+section.slider .card {
+  background-color: orange;
+  text-align: center;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+section.slider .card img {
+  width: 150px;
+  aspect-ratio: auto;
+  margin: 0 auto;
+}
+
+section.slider .card p {
+  margin: 10px 0;
+}
+
+section.slider .card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section.slider .card .unit {
+  font-size: 1.1rem;
+}
+
+section.slider .card .time span {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+section.slider .card a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: brown;
+}
+
+section.slider .card .play a {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+/* END SLIDER */
+
 /* FOOTER */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
