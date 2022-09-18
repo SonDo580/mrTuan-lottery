@@ -383,7 +383,10 @@ section.result .right h1 {
   border-bottom: 1px solid green;
 }
 
-section.result .card {
+section.result a.card {
+  display: block;
+  text-decoration: none;
+  color: black;
   border-bottom: 2px solid green;
   padding-bottom: 20px;
 }
