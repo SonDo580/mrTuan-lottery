@@ -409,7 +409,7 @@ section.result .card .balls {
 section.result .card .ball {
   aspect-ratio: 1 / 1;
   background-image: url(./image/result/number.png);
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
