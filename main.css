@@ -281,6 +281,73 @@ section.slider .owl-dots .owl-dot.active span {
 }
 /* END SLIDER */
 
+/* RESULT */
+section.result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section.result h1 {
+  text-align: center;
+  color: darkblue;
+  font-size: 1.7rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+section.result .left {
+  border: 1px solid black;
+}
+
+section.result .winner-display {
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+section.result .winner-display img {
+  height: 100%;
+}
+
+section.result .winner-display img[alt='winner-cup'] {
+  height: 70%;
+}
+
+section.result .winner-display img[alt='leave-right'] {
+  transform: scaleX(-1);
+} 
+
+section.result .winners {
+  flex-grow: 1;
+  text-align: center;
+}
+
+section.result .winners .card {
+  margin-bottom: 20px;
+}
+
+section.result .winners p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+section.result .winners p.name {
+  color: blue;
+}
+section.result .winners p.lottery {
+  font-weight: bold;
+  font-size: .9rem;
+}
+section.result .winners p.date {
+  font-size: .85rem;
+}
+section.result .winners span.money {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: red;
+}
+/* END RESULT */
+
 /* PROCESS */
 section.process {
   background-image: url(./image/process/background.jpg);
