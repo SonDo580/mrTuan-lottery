@@ -332,6 +332,52 @@ section.process .step h3 {
 }
 /* END PROCESS */
 
+/* INTRO */
+section.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+}
+
+section.intro .left {
+  padding-right: 20px;
+}
+
+section.intro .left .card {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+section.intro .left .card-img {
+  padding: 10px;
+}
+
+section.intro .left .card-img img {
+  width: 100%;
+}
+
+section.intro .left .card-text {
+  font-size: 1.05rem;
+}
+
+section.intro .left .card-text img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+section.intro .left .card-text a {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+  color: blueviolet;
+}
+/* END INTRO */
+
 /* FOOTER */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
