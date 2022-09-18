@@ -425,7 +425,7 @@ section.result .card .summary {
 
 section.result .card .summary p {
   flex-grow: 1;
-  border: 2px solid darkred;
+  border: 2px solid darkorange;
   border-radius: 5px;
   padding: 6px 8px;
   margin-top: 5px;
