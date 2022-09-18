@@ -384,16 +384,19 @@ section.result .card .info {
 section.result .card .info h5 {
   font-size: 1.7rem;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 section.result .card .info p {
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
 section.result .card .balls {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   gap: 5px;
+  margin-top: 5px;
 }
 
 section.result .card .ball {
