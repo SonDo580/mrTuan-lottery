@@ -321,10 +321,11 @@ section.result .winners {
 
 section.result .winners .card-winner {
   margin-bottom: 20px;
+  display: none;
 }
 
-section.result .winners .card-winner.hide {
-  display: none;
+section.result .winners .card-winner.active {
+  display: block;
 }
 
 section.result .winners p {
