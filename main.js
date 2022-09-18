@@ -22,3 +22,13 @@ setInterval(() => {
     }
   }
 }, 3000);
+
+const winnerCards = document.querySelectorAll("section.result .card-winner");
+const winnerNum = winnerCards.length;
+setInterval(() => {
+  for (let i = 0; i < winnerNum; i++) {
+    if (winnerCards[i].classList.contains("active")) {
+      winnerCards[i].classList.remove("active");
+    }
+  }
+}, 3000);
