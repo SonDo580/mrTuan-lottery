@@ -285,6 +285,7 @@ section.slider .owl-dots .owl-dot.active span {
 section.result {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: aquamarine;
 }
 
 section.result h1 {
@@ -309,13 +310,13 @@ section.result .winner-display img {
   height: 100%;
 }
 
-section.result .winner-display img[alt='winner-cup'] {
+section.result .winner-display img[alt="winner-cup"] {
   height: 70%;
 }
 
-section.result .winner-display img[alt='leave-right'] {
+section.result .winner-display img[alt="leave-right"] {
   transform: scaleX(-1);
-} 
+}
 
 section.result .winners {
   flex-grow: 1;
@@ -336,15 +337,34 @@ section.result .winners p.name {
 }
 section.result .winners p.lottery {
   font-weight: bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 section.result .winners p.date {
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 section.result .winners span.money {
   font-size: 1.05rem;
   font-weight: bold;
   color: red;
+}
+
+section.result .update {
+  padding: 10px;
+}
+
+section.result h2 {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+section.result h2 img {
+  width: 30px;
+  margin-right: 10px;
+  height: 35px;
+}
+
+section.result .update > img {
+  width: 100%;
 }
 /* END RESULT */
 
