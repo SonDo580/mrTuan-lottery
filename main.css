@@ -375,6 +375,20 @@ section.result .right h1 {
   margin-bottom: 0;
   border-bottom: 1px solid green;
 }
+
+section.result .card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.result .card .info h5 {
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+section.result .card .info p {
+  margin-top: 5px;
+}
 /* END RESULT */
 
 /* PROCESS */
