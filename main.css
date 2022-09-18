@@ -296,10 +296,6 @@ section.result h1 {
   margin-top: 10px;
 }
 
-section.result .left {
-  border: 1px solid black;
-}
-
 section.result .winner-display {
   display: flex;
   align-items: center;
@@ -365,6 +361,11 @@ section.result h2 img {
 
 section.result .update > img {
   width: 100%;
+}
+
+section.result .right {
+  background-image: url(./image/result/result_background.jpg);
+  background-size: cover;
 }
 /* END RESULT */
 
