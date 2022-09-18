@@ -378,6 +378,55 @@ section.intro .left .card-text a {
 }
 /* END INTRO */
 
+/* FEATURE */
+section.feature {
+  text-align: center;
+}
+
+section.feature h1 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+section.feature h1 span {
+  color: red;
+}
+
+section.feature > p {
+  border: 5px dotted orange;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+section.feature > p a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+section.feature .features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: baseline;
+}
+
+section.feature .card {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+section.feature .card img {
+  width: 75%;
+}
+
+section.feature .card p {
+  padding: 10px;
+}
+/* END FEATURE */
+
 /* FOOTER */
 footer {
   background-color: rgba(0, 0, 0, 0.9);
