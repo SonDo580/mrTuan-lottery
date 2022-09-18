@@ -376,6 +376,10 @@ section.result .right h1 {
   border-bottom: 1px solid green;
 }
 
+section.result .card {
+  border-bottom: 2px solid green;
+}
+
 section.result .card .info {
   display: flex;
   justify-content: space-between;
@@ -406,6 +410,28 @@ section.result .card .ball {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section.result .card .summary {
+  display: flex;
+  gap: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+}
+
+section.result .card .summary p {
+  flex-grow: 1;
+  border: 3px solid yellowgreen;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  text-align: center;
+  color: darkblue;
+}
+
+section.result .card .summary span {
+  color: black;
 }
 
 /* END RESULT */
