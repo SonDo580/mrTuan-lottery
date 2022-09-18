@@ -368,6 +368,8 @@ section.result .right {
   background-size: cover;
   padding-left: 60px;
   padding-right: 20px;
+  height: 700px;
+  overflow: auto;
 }
 
 section.result .right h1 {
@@ -433,7 +435,6 @@ section.result .card .summary p {
 section.result .card .summary span {
   color: black;
 }
-
 /* END RESULT */
 
 /* PROCESS */
