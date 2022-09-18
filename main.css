@@ -415,6 +415,10 @@ section.result .card .ball {
   align-items: center;
 }
 
+section.result .card .special {
+  background-image: url(./image/result/ball.png);
+}
+
 section.result .card .summary {
   display: flex;
   gap: 5px;
