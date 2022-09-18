@@ -24,11 +24,19 @@ setInterval(() => {
 }, 3000);
 
 const winnerCards = document.querySelectorAll("section.result .card-winner");
-const winnerNum = winnerCards.length;
+const numWinners = winnerCards.length;
 setInterval(() => {
-  for (let i = 0; i < winnerNum; i++) {
+  if (numWinners <= 2) {
+    return;
+  }
+
+  for (let i = 0; i < numWinners; i++) {
     if (winnerCards[i].classList.contains("active")) {
       winnerCards[i].classList.remove("active");
+      winnerCards[(i + 1) % numWinners].classList.remove("active");
+      winnerCards[(i + 2) % numWinners].classList.add("active");
+      winnerCards[(i + 3) % numWinners].classList.add("active");
+      return;
     }
   }
 }, 3000);
