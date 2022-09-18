@@ -30,13 +30,29 @@ setInterval(() => {
     return;
   }
 
-  for (let i = 0; i < numWinners; i++) {
-    if (winnerCards[i].classList.contains("active")) {
-      winnerCards[i].classList.remove("active");
-      winnerCards[(i + 1) % numWinners].classList.remove("active");
-      winnerCards[(i + 2) % numWinners].classList.add("active");
-      winnerCards[(i + 3) % numWinners].classList.add("active");
+  for (let i = 0; i < numWinners; i += 2) {
+    if (!winnerCards[i].classList.contains("active")) {
+      continue;
+    }
+
+    winnerCards[i].classList.remove("active");
+    if (i + 1 <= numWinners - 1) {
+      winnerCards[i + 1].classList.remove("active");
+    }
+
+    if (i === numWinners - 1 || i === numWinners - 2) {
+      winnerCards[0].classList.add("active");
+      winnerCards[1].classList.add("active");
       return;
     }
+
+    if (i + 2 <= numWinners - 1) {
+      winnerCards[i + 2].classList.add("active");
+    }
+    if (i + 3 <= numWinners - 1) {
+      winnerCards[i + 3].classList.add("active");
+    }
+
+    return;
   }
 }, 3000);
