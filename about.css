@@ -14,15 +14,15 @@ main h1 {
   font-size: 1.5rem;
 }
 
-ol {
+main ol {
   counter-reset: item;
 }
 
-li {
+main li {
     list-style: none;
 }
 
-li::before {
+main li::before {
     content: counters(item, ".") ". ";
     counter-increment: item;
 }
