@@ -1,0 +1,57 @@
+main {
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+main .meta {
+    color: #757575;
+    font-size: 1.05rem;
+    padding-bottom: 5px;
+}
+
+main .meta .time {
+    padding-right: 5px;
+    border-right: 1px solid #757575;
+}
+
+main .interaction {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main .interaction button {
+    background-color: royalblue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+main .interaction button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+main .interaction > span {
+    font-size: .8rem;
+}
+
+main .interaction a {
+    display: block;
+    margin-left: auto;
+}
+
+main .interaction img {
+    height: 35px;
+}
+
+main .keywords {
+    font-size: 1.05rem;
+}
