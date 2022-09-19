@@ -1,7 +1,7 @@
 main {
   background-color: #f9f9f9;
   border: 1px solid #f0f0f0;
-  padding: 0 20px;
+  padding: 0 20px 30px;
   margin-top: 20px;
 }
 
@@ -54,4 +54,34 @@ main .interaction img {
 
 main .keywords {
     font-size: 1.05rem;
+}
+
+main .related {
+    margin-top: 40px;
+}
+
+main .related .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 30px;
+}
+
+main .related a.card {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+main .related .card img {
+    width: 100%;
+} 
+
+main .related .card .description {
+    text-align: center;
+    margin: 0;
+}
+
+main .related .card:hover .description {
+    color: blueviolet;
 }
