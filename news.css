@@ -3,5 +3,30 @@ main {
   border: 1px solid #f0f0f0;
   padding: 0 20px;
   margin-top: 20px;
-  font-size: 1.05rem;
+  padding-bottom: 50px;
+}
+
+main h1 {
+    background-image: url(./image/news/headingBG.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 30px;
+}
+
+main .card img {
+    width: 100%;
+} 
+
+main .card .description {
+    text-align: center;
+    margin: 0;
 }
