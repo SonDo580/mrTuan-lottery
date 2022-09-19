@@ -235,7 +235,7 @@ section.slider {
   
   section.result .card .ball {
     aspect-ratio: 1 / 1;
-    background-image: url(./image/result/number.png);
+    background-image: url(./image/home/result/number.png);
     background-size: contain;
     display: flex;
     justify-content: center;
@@ -243,7 +243,7 @@ section.slider {
   }
   
   section.result .card .special {
-    background-image: url(./image/result/ball.png);
+    background-image: url(./image/home/result/ball.png);
   }
   
   section.result .card .summary {
@@ -276,7 +276,7 @@ section.slider {
   
   /* PROCESS */
   section.process {
-    background-image: url(./image/process/background.jpg);
+    background-image: url(./image/home/process/background.jpg);
     background-color: aqua;
     text-align: center;
     padding-bottom: 20px;
