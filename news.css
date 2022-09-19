@@ -22,6 +22,12 @@ main .cards {
     row-gap: 30px;
 }
 
+main a.card {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
 main .card img {
     width: 100%;
 } 
@@ -29,4 +35,8 @@ main .card img {
 main .card .description {
     text-align: center;
     margin: 0;
+}
+
+main .card:hover .description {
+    color: blueviolet;
 }
