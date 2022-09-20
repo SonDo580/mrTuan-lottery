@@ -20,7 +20,7 @@ main .lottery img {
 }
 
 main .lottery .time {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 main .lottery .time span {
@@ -31,6 +31,42 @@ main .lottery .time span {
 main .lottery .prize {
     text-align: right;
     color: red;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding-right: 10px;
+}
+
+main h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+main h2 span {
+    color: red;
+}
+
+main .chooseTicket ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+main .chooseTicket li {
+    flex-grow: 1;
+    text-align: center;
+    border-top: 6px solid #ccc;
+    border-bottom: 6px solid #ccc;
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+main .chooseTicket li.active {
+    border-top: 6px solid red;
+    border-bottom: 6px solid red;
+    color: blue;
+}
+
+main .chooseTicket li:hover {
+    cursor: pointer;
+    border-color: blue;
 }
