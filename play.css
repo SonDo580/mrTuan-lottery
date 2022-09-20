@@ -31,6 +31,6 @@ main .lottery .time span {
 main .lottery .prize {
     text-align: right;
     color: red;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-right: 10px;
 }
