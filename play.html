@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mua vé số EuroMillions</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="#">
+          <img src="./image/header/logo_onbit_full.gif" alt="onbit-logo" />
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="top-line">
+          <input type="text" placeholder="Email hoặc số điện thoại" />
+          <input type="password" placeholder="Mật khẩu" />
+          <button class="login">Đăng nhập</button>
+          <button class="signup">Đăng ký</button>
+        </div>
+        <p><a href="#">Quên mật khẩu</a></p>
+        <div class="bottom-line">
+          <button class="share">Hoa hồng chia sẻ</button>
+          <button class="fb-login">
+            <img src="./image/header/fb-small.png" alt="fb-icon" />Đăng nhập
+            Facebook
+          </button>
+          <button class="zalo-login">
+            <img src="./image/header/zalo-small.png" alt="zalo-icon" />Đăng nhập
+            Zalo
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+          Chơi ngay <i class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="list">
+            <p><a href="#">Vietlott Keno</a></p>
+            <p><a href="#">US MegaMillions</a></p>
+            <p><a href="#">Euro Millions</a></p>
+            <p><a href="#">Oz Lotto</a></p>
+          </div>
+        </li>
+        <li>
+          Kết quả <i class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="list">
+            <p><a href="#">Vietlott Keno</a></p>
+            <p><a href="#">US MegaMillions</a></p>
+            <p><a href="#">Euro Millions</a></p>
+            <p><a href="#">Oz Lotto</a></p>
+          </div>
+        </li>
+        <li><a href="#">Người chiến thắng</a></li>
+        <li><a href="#">Tin tức và ưu đãi</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="lottery">
+        <div class="img">
+          <img src="./image/play/euromillions.png" alt="euromillions" />
+        </div>
+        <p class="time">Còn lại <span>2:03:05</span></p>
+        <p class="prize">174,000,000 EUR</p>
+      </div>
+
+      <div class="chooseTicket">
+        <h2><span>Bước 1:</span> Chọn số lượng vé</h2>
+        <ul>
+          <li data-num="1">1 vé</li>
+          <li data-num="3" class="active">3 vé</li>
+          <li data-num="5">5 vé</li>
+          <li data-num="10">10 vé</li>
+          <li data-num="15">15 vé</li>
+        </ul>
+      </div>
+
+      <div class="chooseNumber">
+        <h2><span>Bước 2:</span> Chọn dãy số may mắn</h2>
+        <p class="note">
+          *Với ô TC, vé sẽ được chọn ngẫu nhiên bằng máy Vietlott, với phí tính
+          thêm chỉ 500đ/vé.
+        </p>
+        <div class="buttonsAll">
+          <button>Chọn nhanh</button>
+          <button><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="buttons">
+              <button>Chọn nhanh</button>
+              <button><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <p>Chọn 5 số</p>
+            <div class="numTable1">
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+            </div>
+            <p>Chọn 2 số</p>
+            <div class="numTable2">
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chooseMode">
+        <h2><span>Bước 3:</span> Chọn chế độ chơi</h2>
+        <ul>
+          <li>
+            <label for="one">
+              <input type="radio" name="mode" id="oneTime" />
+              Một lần
+            </label>
+          </li>
+          <li>
+            <label for="multipleTimes">
+              <input type="radio" name="mode" id="multipleTimes" />
+              Nhiều kỳ
+              <img src="./image/play/question.png" alt="question mark" />
+            </label>
+            <select name="times" id="times">
+              <option value="0">2 kỳ</option>
+              <option value="1">4 kỳ</option>
+              <option value="2">8 kỳ</option>
+            </select>
+          </li>
+          <li>
+            <label for="longTerm">
+              <input type="radio" name="mode" id="longTerm" />
+              Dài hạn
+              <img src="./image/play/question.png" alt="question mark" />
+            </label>
+            <select name="term" id="term">
+              <option value="0">Hàng kỳ</option>
+              <option value="1">Hàng tuần</option>
+              <option value="2">Hàng tháng</option>
+            </select>
+            <p class="note">* Miễn phí mọi lần chơi thứ 10</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="confirmAndPay">
+        <h2><span>Bước 4:</span> Xác nhận và thanh toán</h2>
+        <div>
+            <img src="./image/play/ticket_guarantee.png" alt="ticket_guarantee">
+            <div class="price"></div>
+            <div class="pay">
+                <button>Thanh toán </button>
+                <p>* Thanh toán rẻ hơn với
+                    đồng Onbit</p>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="introduction">
+      <h3>EUROMILLIONS</h3>
+      <p>...</p>
+      <h3>AI CÓ THỂ THAM GIA</h3>
+      <p>...</p>
+      <h3>LÀM THẾ NÀO ĐỂ CHIẾN THẮNG</h3>
+      <p>...</p>
+      <h3>TIỀN THƯỞNG VÀ THUẾ</h3>
+      <p>...</p>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="policy">
+          <h4>Điều khoản sử dụng</h4>
+          <ul>
+            <li><a href="#">Điều khoản chung</a></li>
+            <li><a href="#">Điều khoản giao dịch</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+        <div class="connect">
+          <h4>Kết nối với chúng tôi</h4>
+          <div>
+            <a href="https://www.facebook.com/onbit.vn"
+              ><img src="./image/footer/icon_facebook.png" alt="facebook-icon"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=nltt3i5X7FU"
+              ><img src="./image/footer/icon_youtube.png" alt="youtubr-icon"
+            /></a>
+            <a href="https://www.instagram.com/onbit.vn/"
+              ><img
+                src="./image/footer/icon_instagram.png"
+                alt="instagram-icon"
+            /></a>
+            <a href="https://twitter.com/onbitvn"
+              ><img src="./image/footer/icon_tweeter.png" alt="tweeter-icon"
+            /></a>
+          </div>
+        </div>
+        <div class="payment">
+          <h4>Chấp nhận thanh toán</h4>
+          <div>
+            <img src="./image/footer/atm_card.png" alt="atm" />
+            <img src="./image/footer/visa_card.png" alt="visa" />
+            <img src="./image/footer/master_card.png" alt="master-card" />
+            <img src="./image/footer/logo-momo.png" alt="momo" />
+          </div>
+          <div class="vnpay">
+            <img src="./image/footer/logovnpay-qr.png" alt="vnpay" />
+          </div>
+        </div>
+        <div class="customer">
+          <h4>Chăm sóc khách hàng</h4>
+          <p>Hotline: <a href="#">0967.401.489</a></p>
+          <p>Giờ làm việc: 8:00 - 17:00</p>
+          <p>(Tất cả các ngày, bao gồm lễ Tết)</p>
+          <p>Email hỗ trợ: <a href="#">support@onbit.vn</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h3>CÔNG TY TNHH ONBIT VIỆT NAM</h3>
+        <p>
+          <a href="#">Giới thiệu</a>Giấy CNĐKDN: 0315283217, cấp bởi Sở KHĐT
+          thành phố Hồ Chí Minh
+        </p>
+        <p>
+          <a href="#">Liên hệ</a>Địa chỉ: Tầng 14, Toà nhà HM Town, 412 Nguyễn
+          Thị Minh Khai, Phường 5, Quận 3, Thành phố Hồ Chí Minh
+        </p>
+        <p class="copyright">Copyright © 2021 Onbit VN. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="fixed">
+      <a href="https://zalo.me/0967401489"
+        ><img class="zalo" src="./image/fixed/zalo-icon.png" alt="zalo-icon"
+      /></a>
+    </div>
+  </body>
+</html>
