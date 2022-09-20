@@ -85,3 +85,17 @@ main .related .card .description {
 main .related .card:hover .description {
     color: blueviolet;
 }
+
+.fixed .scrollBack {
+    background-image: url(./image/news/upButton.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.fixed .scrollBack:hover {
+    cursor: pointer;
+}
