@@ -133,3 +133,16 @@ function resetAll() {
   const activeCells = document.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
 }
+
+// PICK RANDOM NUMBER
+function getRandomNumber(quantity, min, max) {
+  const arr = [];
+  while (arr.length < quantity) {
+    const num = Math.floor(min + (max - min + 1) * Math.random());
+
+    if (!arr.includes(num)) {
+      arr.push(num);
+    }
+  }
+  return arr;
+}
