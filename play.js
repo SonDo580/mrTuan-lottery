@@ -187,3 +187,10 @@ function quickPick1Time(event) {
     }
   });
 }
+
+const quickPickAllButton = document.querySelector(
+  "button[data-function=quickPickAll]"
+);
+quickPickAllButton.addEventListener("click", quickPickAll);
+
+function quickPickAll() {}
