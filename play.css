@@ -85,6 +85,7 @@ main .chooseNumber button.choose {
   padding: 4px 8px;
   border-radius: 5px;
   border: none;
+  font-size: 1.05rem;
 }
 
 main .chooseNumber button.choose:hover {
@@ -146,7 +147,7 @@ main .chooseNumber .num {
   justify-content: center;
   align-items: center;
   border: 0.3px solid grey;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 main .chooseNumber .numTable .num:hover {
