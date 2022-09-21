@@ -115,3 +115,11 @@ function resetSelection(event) {
   const activeCells = card.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
 }
+
+const resetAllButton = document.querySelector("button[data-function=resetAll]");
+resetAllButton.addEventListener("click", resetAll);
+
+function resetAll() {
+  const activeCells = document.querySelectorAll(".numTable .active");
+  activeCells.forEach((cell) => cell.classList.remove("active"));
+}
