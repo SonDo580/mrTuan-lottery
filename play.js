@@ -1,3 +1,32 @@
+// TICKET RELATED
+const ticketOptions = document.querySelectorAll(".chooseTicket li");
+let ticketQuantity = 0;
+getTicketQuantity();
+
+ticketOptions.forEach((option) =>
+  option.addEventListener("click", changeTicketQuantity)
+);
+
+function changeTicketQuantity(event) {
+  for (const option of ticketOptions) {
+    if (option.classList.contains("active")) {
+      option.classList.remove("active");
+    }
+  }
+
+  event.target.classList.add("active");
+  ticketQuantity = Number(event.target.getAttribute("data-num"));
+}
+
+function getTicketQuantity() {
+  for (const option of ticketOptions) {
+    if (option.classList.contains("active")) {
+      ticketQuantity = Number(option.getAttribute("data-num"));
+    }
+  }
+}
+
+// RENDER CARDS
 const cardContainer = document.querySelector(".chooseNumber .cards");
 
 const card = document.createElement("div");
@@ -9,11 +38,12 @@ buttonContainer.classList.add("buttons");
 const chooseButton = document.createElement("button");
 chooseButton.classList.add("choose");
 chooseButton.textContent = "Chọn nhanh";
-buttonContainer.appendChild(chooseButton);
 
 const resetButton = document.createElement("button");
 resetButton.classList.add("reset");
 resetButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+
+buttonContainer.appendChild(chooseButton);
 buttonContainer.appendChild(resetButton);
 
 const instruction1 = document.createElement("p");
