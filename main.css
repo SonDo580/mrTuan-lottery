@@ -7,6 +7,10 @@ body {
   padding: 0 150px;
 }
 
+body button:hover {
+  cursor: pointer;
+}
+
 /* HEADER */
 header {
   display: flex;
