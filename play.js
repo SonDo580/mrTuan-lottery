@@ -24,26 +24,12 @@ instruction2.textContent = "Chọn 2 số";
 const table1 = document.createElement("div");
 table1.classList.add("numTable");
 table1.classList.add("table1");
-
-for (let i = 1; i <= 50; i++) {
-  const numCell = document.createElement("div");
-  numCell.classList.add("num");
-  numCell.textContent = i;
-
-  table1.appendChild(numCell);
-}
+renderNumTable(table1, 50);
 
 const table2 = document.createElement("div");
 table2.classList.add("numTable");
 table2.classList.add("table2");
-
-for (let i = 1; i <= 12; i++) {
-  const numCell = document.createElement("div");
-  numCell.classList.add("num");
-  numCell.textContent = i;
-
-  table2.appendChild(numCell);
-}
+renderNumTable(table2, 12);
 
 card.appendChild(buttonContainer);
 card.appendChild(instruction1);
@@ -52,3 +38,13 @@ card.appendChild(instruction2);
 card.appendChild(table2);
 
 cardContainer.appendChild(card);
+
+function renderNumTable(table, length) {
+  for (let i = 1; i <= length; i++) {
+    const numCell = document.createElement("div");
+    numCell.classList.add("num");
+    numCell.textContent = i;
+
+    table.appendChild(numCell);
+  }
+}
