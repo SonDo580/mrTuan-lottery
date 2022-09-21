@@ -16,6 +16,7 @@ function changeTicketQuantity(event) {
 
   event.target.classList.add("active");
   ticketQuantity = Number(event.target.getAttribute("data-num"));
+  renderCards();
 }
 
 function getTicketQuantity() {
@@ -28,46 +29,53 @@ function getTicketQuantity() {
 
 // RENDER CARDS
 const cardContainer = document.querySelector(".chooseNumber .cards");
+renderCards();
 
-const card = document.createElement("div");
-card.classList.add("card");
+function renderCards() {
+  cardContainer.textContent = "";
 
-const buttonContainer = document.createElement("div");
-buttonContainer.classList.add("buttons");
+  for (let i = 0; i < ticketQuantity; i++) {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-const chooseButton = document.createElement("button");
-chooseButton.classList.add("choose");
-chooseButton.textContent = "Chọn nhanh";
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("buttons");
 
-const resetButton = document.createElement("button");
-resetButton.classList.add("reset");
-resetButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+    const chooseButton = document.createElement("button");
+    chooseButton.classList.add("choose");
+    chooseButton.textContent = "Chọn nhanh";
 
-buttonContainer.appendChild(chooseButton);
-buttonContainer.appendChild(resetButton);
+    const resetButton = document.createElement("button");
+    resetButton.classList.add("reset");
+    resetButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
 
-const instruction1 = document.createElement("p");
-instruction1.textContent = "Chọn 5 số";
-const instruction2 = document.createElement("p");
-instruction2.textContent = "Chọn 2 số";
+    buttonContainer.appendChild(chooseButton);
+    buttonContainer.appendChild(resetButton);
 
-const table1 = document.createElement("div");
-table1.classList.add("numTable");
-table1.classList.add("table1");
-renderNumTable(table1, 50);
+    const instruction1 = document.createElement("p");
+    instruction1.textContent = "Chọn 5 số";
+    const instruction2 = document.createElement("p");
+    instruction2.textContent = "Chọn 2 số";
 
-const table2 = document.createElement("div");
-table2.classList.add("numTable");
-table2.classList.add("table2");
-renderNumTable(table2, 12);
+    const table1 = document.createElement("div");
+    table1.classList.add("numTable");
+    table1.classList.add("table1");
+    renderNumTable(table1, 50);
 
-card.appendChild(buttonContainer);
-card.appendChild(instruction1);
-card.appendChild(table1);
-card.appendChild(instruction2);
-card.appendChild(table2);
+    const table2 = document.createElement("div");
+    table2.classList.add("numTable");
+    table2.classList.add("table2");
+    renderNumTable(table2, 12);
 
-cardContainer.appendChild(card);
+    card.appendChild(buttonContainer);
+    card.appendChild(instruction1);
+    card.appendChild(table1);
+    card.appendChild(instruction2);
+    card.appendChild(table2);
+
+    cardContainer.appendChild(card);
+  }
+}
 
 function renderNumTable(table, length) {
   for (let i = 1; i <= length; i++) {
