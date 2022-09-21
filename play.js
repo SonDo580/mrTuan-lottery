@@ -48,6 +48,7 @@ function renderCards() {
     const resetButton = document.createElement("button");
     resetButton.classList.add("reset");
     resetButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
+    resetButton.addEventListener("click", resetSelection);
 
     buttonContainer.appendChild(chooseButton);
     buttonContainer.appendChild(resetButton);
@@ -88,6 +89,7 @@ function renderNumTable(table, length) {
   }
 }
 
+// NUMBER SELECTION
 function selectNumber(event) {
   const selectedCell = event.target;
   const table = selectedCell.parentNode;
@@ -106,4 +108,10 @@ function selectNumber(event) {
   }
 
   selectedCell.classList.add("active");
+}
+
+function resetSelection(event) {
+  const card = event.target.parentNode.parentNode;
+  const activeCells = card.querySelectorAll(".numTable .active");
+  activeCells.forEach((cell) => cell.classList.remove("active"));
 }
