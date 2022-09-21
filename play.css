@@ -104,6 +104,10 @@ main .chooseNumber button.reset:hover {
   background-color: #ccc;
 }
 
+main .chooseNumber button.reset i {
+  pointer-events: none;
+}
+
 main .chooseNumber .buttonsAll {
   text-align: right;
   margin-bottom: 10px;
