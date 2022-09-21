@@ -44,6 +44,7 @@ function renderCards() {
     const chooseButton = document.createElement("button");
     chooseButton.classList.add("choose");
     chooseButton.textContent = "Chọn nhanh";
+    chooseButton.addEventListener("click", quickPick);
 
     const resetButton = document.createElement("button");
     resetButton.classList.add("reset");
@@ -150,3 +151,5 @@ function getRandomNumber(quantity, min, max) {
   }
   return arr;
 }
+
+function quickPick(event) {}
