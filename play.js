@@ -130,6 +130,10 @@ const resetAllButton = document.querySelector("button[data-function=resetAll]");
 resetAllButton.addEventListener("click", resetAll);
 
 function resetAll() {
+  if (!confirm("Bạn có thực sự muốn xoá hết?")) {
+    return;
+  }
+
   const activeCells = document.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
 }
