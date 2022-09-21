@@ -93,21 +93,31 @@ function renderNumTable(table, length) {
 function selectNumber(event) {
   const selectedCell = event.target;
   const table = selectedCell.parentNode;
-  const activeCells = table.querySelectorAll(".active");
+  const tableActiveCellNumber = table.querySelectorAll(".active").length;
+
+  const card = table.parentNode;
+  const cardActiveCellNumber = card.querySelectorAll(".active").length;
 
   if (selectedCell.classList.contains("active")) {
     selectedCell.classList.remove("active");
+
+    if (card.classList.contains("done")) {
+      card.classList.remove("done");
+    }
     return;
   }
 
   if (
-    (table.classList.contains("table1") && activeCells.length >= 5) ||
-    (table.classList.contains("table2") && activeCells.length >= 2)
+    (table.classList.contains("table1") && tableActiveCellNumber === 5) ||
+    (table.classList.contains("table2") && tableActiveCellNumber === 2)
   ) {
     return;
   }
 
   selectedCell.classList.add("active");
+  if (cardActiveCellNumber === 6) {
+    card.classList.add("done");
+  }
 }
 
 function resetSelection(event) {
