@@ -47,10 +47,6 @@ header {
   color: white;
 }
 
-.header-right button:hover {
-  cursor: pointer;
-}
-
 .header-right button.login {
   background-color: red;
   padding: 5px 15px;

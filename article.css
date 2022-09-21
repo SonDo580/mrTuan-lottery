@@ -36,7 +36,6 @@ main .interaction button {
 
 main .interaction button:hover {
     background-color: blue;
-    cursor: pointer;
 }
 
 main .interaction > span {
