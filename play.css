@@ -130,6 +130,10 @@ main .chooseNumber .card:hover {
   border-color: #2196f3;
 }
 
+main .chooseNumber .card.done {
+  background-color: lightblue;
+}
+
 main .chooseNumber .card .buttons {
   display: flex;
   justify-content: space-between;
