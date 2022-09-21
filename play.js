@@ -152,4 +152,38 @@ function getRandomNumber(quantity, min, max) {
   return arr;
 }
 
-function quickPick(event) {}
+function quickPick(event) {
+  let counter = 0;
+  const picking = setInterval(() => {
+    quickPick1Time(event);
+
+    if (++counter > 5) {
+      window.clearInterval(picking);
+    }
+  }, 80);
+
+  const card = event.target.parentNode.parentNode;
+  card.classList.add("done");
+}
+
+function quickPick1Time(event) {
+  resetSelection(event);
+  const table1Nums = getRandomNumber(5, 1, 50);
+  const table2Nums = getRandomNumber(2, 1, 12);
+
+  const card = event.target.parentNode.parentNode;
+  const table1Cells = card.querySelectorAll(".table1 .num");
+  const table2Cells = card.querySelectorAll(".table2 .num");
+
+  table1Cells.forEach((cell) => {
+    if (table1Nums.includes(Number(cell.textContent))) {
+      cell.classList.add("active");
+    }
+  });
+
+  table2Cells.forEach((cell) => {
+    if (table2Nums.includes(Number(cell.textContent))) {
+      cell.classList.add("active");
+    }
+  });
+}
