@@ -82,7 +82,28 @@ function renderNumTable(table, length) {
     const numCell = document.createElement("div");
     numCell.classList.add("num");
     numCell.textContent = i;
+    numCell.addEventListener("click", selectNumber);
 
     table.appendChild(numCell);
   }
+}
+
+function selectNumber(event) {
+  const selectedCell = event.target;
+  const table = selectedCell.parentNode;
+  const activeCells = table.querySelectorAll(".active");
+
+  if (selectedCell.classList.contains("active")) {
+    selectedCell.classList.remove("active");
+    return;
+  }
+
+  if (
+    (table.classList.contains("table1") && activeCells.length >= 5) ||
+    (table.classList.contains("table2") && activeCells.length >= 2)
+  ) {
+    return;
+  }
+
+  selectedCell.classList.add("active");
 }
