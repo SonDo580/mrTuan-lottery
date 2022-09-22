@@ -222,3 +222,14 @@ function quickPickAll() {
     }, 80);
   });
 }
+
+// CALCULATE AND RENDER PRICE
+function calculatePrice(price = 11.6) {
+  return price * ticketQuantity;
+}
+
+function renderPrice(unit = "USD") {
+  let price = calculatePrice();
+  const priceSpan = document.querySelector("span[data-name=price]");
+  priceSpan.textContent = price + " " + unit;
+}
