@@ -3,6 +3,7 @@ const ticketOptions = document.querySelectorAll(".chooseTicket li");
 let ticketQuantity = 0;
 getTicketQuantity();
 renderPrice();
+renderDiscount();
 
 ticketOptions.forEach((option) =>
   option.addEventListener("click", changeTicketQuantity)
@@ -19,6 +20,7 @@ function changeTicketQuantity(event) {
   ticketQuantity = Number(event.target.getAttribute("data-num"));
   renderCards();
   renderPrice();
+  renderDiscount();
 }
 
 function getTicketQuantity() {
@@ -234,4 +236,24 @@ function renderPrice(unit = "USD") {
   let price = calculatePrice();
   const priceSpan = document.querySelector("span[data-name=price]");
   priceSpan.textContent = price + " " + unit;
+}
+
+function calculateDiscount() {
+  if (ticketQuantity === 1) {
+    return 0;
+  } else if (ticketQuantity === 3) {
+    return 0.8;
+  } else if (ticketQuantity === 5) {
+    return 2.8;
+  } else if (ticketQuantity === 10) {
+    return 8;
+  } else if (ticketQuantity === 15) {
+    return 14;
+  }
+}
+
+function renderDiscount(unit = "USD") {
+  let discount = calculateDiscount();
+  const discountSpan = document.querySelector("span[data-name=discount]");
+  discountSpan.textContent = discount + " " + unit;
 }
