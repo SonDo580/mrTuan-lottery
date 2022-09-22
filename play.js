@@ -144,6 +144,9 @@ function resetAll(needConfirm = true) {
 
   const activeCells = document.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
+
+  const doneCards = document.querySelectorAll(".chooseNumber .done");
+  doneCards.forEach((card) => card.classList.remove("done"));
 }
 
 // PICK RANDOM NUMBER
