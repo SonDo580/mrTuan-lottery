@@ -123,8 +123,13 @@ function selectNumber(event) {
 
 function resetSelection(event) {
   const card = event.target.parentNode.parentNode;
+
   const activeCells = card.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
+
+  if (card.classList.contains("done")) {
+    card.classList.remove("done");
+  }
 }
 
 const resetAllButton = document.querySelector("button[data-function=resetAll]");
@@ -169,11 +174,14 @@ function quickPick(event) {
 }
 
 function quickPick1Time(event) {
-  resetSelection(event);
+  const card = event.target.parentNode.parentNode;
+
+  const activeCells = card.querySelectorAll(".numTable .active");
+  activeCells.forEach((cell) => cell.classList.remove("active"));
+
   const table1Nums = getRandomNumber(5, 1, 50);
   const table2Nums = getRandomNumber(2, 1, 12);
 
-  const card = event.target.parentNode.parentNode;
   const table1Cells = card.querySelectorAll(".table1 .num");
   const table2Cells = card.querySelectorAll(".table2 .num");
 
