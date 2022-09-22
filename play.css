@@ -193,6 +193,7 @@ main .chooseMode li {
   background-color: #a9deff;
   border-radius: 10px;
   padding: 5px 15%;
+  position: relative;
 }
 
 main .chooseMode li:first-of-type {
@@ -226,6 +227,26 @@ main .chooseMode label img {
   margin-left: 10px;
 }
 
+main .chooseMode label .comment {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 0%;
+
+  font-style: normal;
+  background-color: aqua;
+  color: gray;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+  width: 260px;
+  padding: 10px;
+  text-align: left;
+}
+
+main .chooseMode label img:hover + .comment {
+  display: block;
+}
+
 main .chooseMode select {
   display: block;
   padding: 6px 12px;
@@ -242,4 +263,5 @@ main .chooseMode select {
 main .chooseMode .note {
   margin-top: 5px;
   margin-bottom: 0;
+  font-size: 1.05rem;
 }
