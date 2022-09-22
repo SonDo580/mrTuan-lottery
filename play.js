@@ -196,5 +196,5 @@ const quickPickAllButton = document.querySelector(
 quickPickAllButton.addEventListener("click", quickPickAll);
 
 function quickPickAll() {
-  resetAll();
+  resetAll(false);
 }
