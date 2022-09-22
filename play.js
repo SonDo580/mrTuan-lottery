@@ -2,6 +2,7 @@
 const ticketOptions = document.querySelectorAll(".chooseTicket li");
 let ticketQuantity = 0;
 getTicketQuantity();
+renderPrice();
 
 ticketOptions.forEach((option) =>
   option.addEventListener("click", changeTicketQuantity)
@@ -17,6 +18,7 @@ function changeTicketQuantity(event) {
   event.target.classList.add("active");
   ticketQuantity = Number(event.target.getAttribute("data-num"));
   renderCards();
+  renderPrice();
 }
 
 function getTicketQuantity() {
