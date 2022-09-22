@@ -209,5 +209,16 @@ function quickPickAll() {
   activeCells.forEach((cell) => cell.classList.remove("active"));
 
   const cards = document.querySelectorAll(".chooseNumber .card");
-  cards.forEach((card) => card.classList.add("done"));
+  cards.forEach((card) => {
+    card.classList.add("done");
+
+    let counter = 0;
+    const picking = setInterval(() => {
+      quickPick1Time(card);
+
+      if (++counter > 5) {
+        window.clearInterval(picking);
+      }
+    }, 80);
+  });
 }
