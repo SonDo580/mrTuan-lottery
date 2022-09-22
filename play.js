@@ -163,22 +163,20 @@ function getRandomNumber(quantity, min, max) {
 }
 
 function quickPick(event) {
+  const card = event.target.parentNode.parentNode;
+  card.classList.add("done");
+
   let counter = 0;
   const picking = setInterval(() => {
-    quickPick1Time(event);
+    quickPick1Time(card);
 
     if (++counter > 5) {
       window.clearInterval(picking);
     }
   }, 80);
-
-  const card = event.target.parentNode.parentNode;
-  card.classList.add("done");
 }
 
-function quickPick1Time(event) {
-  const card = event.target.parentNode.parentNode;
-
+function quickPick1Time(card) {
   const activeCells = card.querySelectorAll(".numTable .active");
   activeCells.forEach((cell) => cell.classList.remove("active"));
 
