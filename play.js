@@ -130,9 +130,11 @@ function resetSelection(event) {
 const resetAllButton = document.querySelector("button[data-function=resetAll]");
 resetAllButton.addEventListener("click", resetAll);
 
-function resetAll() {
-  if (!confirm("Bạn có thực sự muốn xoá hết?")) {
-    return;
+function resetAll(needConfirm = true) {
+  if (needConfirm) {
+    if (!confirm("Bạn có thực sự muốn xoá hết?")) {
+      return;
+    }
   }
 
   const activeCells = document.querySelectorAll(".numTable .active");
@@ -193,4 +195,6 @@ const quickPickAllButton = document.querySelector(
 );
 quickPickAllButton.addEventListener("click", quickPickAll);
 
-function quickPickAll() {}
+function quickPickAll() {
+  resetAll();
+}
