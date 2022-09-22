@@ -207,5 +207,9 @@ const quickPickAllButton = document.querySelector(
 quickPickAllButton.addEventListener("click", quickPickAll);
 
 function quickPickAll() {
-  resetAll(false);
+  const activeCells = document.querySelectorAll(".numTable .active");
+  activeCells.forEach((cell) => cell.classList.remove("active"));
+
+  const cards = document.querySelectorAll(".chooseNumber .card");
+  cards.forEach((card) => card.classList.add("done"));
 }
