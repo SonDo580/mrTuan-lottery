@@ -109,8 +109,12 @@
           thêm chỉ 500đ/vé.
         </p>
         <div class="buttonsAll">
-          <button class="choose" data-function="quickPickAll">Chọn nhanh</button>
-          <button class="reset" data-function="resetAll"><i class="fa-solid fa-trash"></i></button>
+          <button class="choose" data-function="quickPickAll">
+            Chọn nhanh
+          </button>
+          <button class="reset" data-function="resetAll">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </div>
         <div class="cards"></div>
       </div>
@@ -120,7 +124,7 @@
         <ul>
           <li>
             <label for="one">
-              <input type="radio" name="mode" id="oneTime" />
+              <input type="radio" name="mode" id="oneTime" checked />
               Một lần
             </label>
           </li>
@@ -129,6 +133,10 @@
               <input type="radio" name="mode" id="multipleTimes" />
               Nhiều kỳ
               <img src="./image/play/question.png" alt="question mark" />
+              <p class="comment">
+                Sử dụng bộ số đã chọn cho 5, 10 hoặc 20 lần chơi tiếp theo với
+                nhiều ưu đãi và giảm giá hấp dẫn.
+              </p>
             </label>
             <select name="times" id="times">
               <option value="0">2 kỳ</option>
@@ -141,6 +149,15 @@
               <input type="radio" name="mode" id="longTerm" />
               Dài hạn
               <img src="./image/play/question.png" alt="question mark" />
+              <p class="comment">
+                Tự động sử dụng bộ số vừa chọn cho: <br />
+                - Tất cả các kỳ tiếp theo (Hàng kỳ) <br />
+                - Kỳ đầu tiên mỗi tuần (Hàng tuần) <br />
+                - Kỳ đầu tiên mỗi tháng (Hàng tháng) <br />
+                <em>
+                  *Lưu ý, bạn cần nạp đồng Onbit để thực hiện chức năng này.
+                </em>
+              </p>
             </label>
             <select name="term" id="term">
               <option value="0">Hàng kỳ</option>
