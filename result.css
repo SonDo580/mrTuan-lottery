@@ -6,6 +6,119 @@ main {
 }
 
 main .interaction > span > a {
-    text-decoration: none;
-    color: darkblue;
+  text-decoration: none;
+  color: darkblue;
+}
+
+.mainContent .banner {
+  background-image: url("./image/result/euromillions_banner.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+}
+
+.mainContent h2 {
+  font-size: 1.3rem;
+}
+
+.mainContent .resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.mainContent .resultTable th {
+  background-color: #2b6ca3;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+.mainContent .resultTable th:nth-child(3) {
+  text-align: center;
+}
+
+.mainContent .resultTable th:last-child {
+  text-align: right;
+}
+
+.mainContent .resultTable td {
+  padding: 8px;
+}
+
+.mainContent .resultTable td:nth-child(3) {
+  text-align: center;
+}
+
+.mainContent .resultTable td:last-child {
+  text-align: right;
+}
+
+.mainContent .resultTable .balls {
+  display: flex;
+}
+
+.mainContent .resultTable .ball {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  background-image: url(./image/result/greenBall.png);
+  background-size: contain;
+}
+
+.mainContent .resultTable .ball.special {
+  background-image: url(./image/result/redBall.png);
+}
+
+.mainContent h3 {
+  text-align: center;
+  color: gray;
+}
+
+.mainContent .specialNum p {
+  text-align: center;
+  color: darkred;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.mainContent .video {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.mainContent .video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.mainContent h5 {
+  color: gray;
+  font-size: 1.05rem;
+}
+
+.mainContent .playButton {
+  text-align: center;
+}
+
+.mainContent .playButton a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 15px 10px;
+  font-size: 3rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.mainContent .playButton a:hover {
+  background-color: green;
+}
+
+.mainContent .introduction h3 {
+  text-align: left;
+  color: black;
 }
