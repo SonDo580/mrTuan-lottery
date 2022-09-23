@@ -71,6 +71,10 @@ main .interaction > span > a {
   background-image: url(./image/result/redBall.png);
 }
 
+.mainContent .resultTable tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
 .mainContent h3 {
   text-align: center;
   color: gray;
