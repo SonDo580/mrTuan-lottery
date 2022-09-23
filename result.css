@@ -4,3 +4,8 @@ main {
   padding: 0;
   margin-top: 0;
 }
+
+main .interaction > span > a {
+    text-decoration: none;
+    color: darkblue;
+}
