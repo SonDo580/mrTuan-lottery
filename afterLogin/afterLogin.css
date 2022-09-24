@@ -1,35 +1,109 @@
 /* HEADER */
 .header-right .balance {
-    font-size: 1.1rem;
-    margin: 0;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .header-right .balance span {
-    font-weight: bold;
-    color: blueviolet;
+  font-weight: bold;
+  color: blueviolet;
 }
 
 .header-right .balance img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 .header-right button.deposit {
-    color: #fff;
-    background-color: #eb0000;
-    border-radius: 16px;
-    padding: 5px 10px;
-    height: auto;
-    font-size: 1.1rem;
-    margin-right: 5px;
+  color: #fff;
+  background-color: #eb0000;
+  border-radius: 16px;
+  padding: 5px 10px;
+  height: auto;
+  font-size: 1.1rem;
+  margin-right: 5px;
 }
 
 .header-right button.deposit:hover {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 .header-right .media img {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 /* END HEADER */
+
+/* ROYALTY */
+section.royalty {
+  font-size: 1.1rem;
+  text-align: center;
+  border: 1px solid black;
+}
+
+section.royalty p span.phone {
+  border: 0.5px solid blue;
+  color: blueviolet;
+  display: inline-block;
+  padding: 2px 3px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+section.royalty p .royalty-link {
+  font-size: 1.3rem;
+  border: 1px dashed blue;
+  color: blueviolet;
+  text-decoration: none;
+  padding: 5px;
+}
+
+section.royalty .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0 20px;
+}
+
+section.royalty button {
+  height: 40px;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.05rem;
+
+  display: flex;
+  align-items: center;
+}
+
+section.royalty button img {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  margin-right: 5px;
+}
+
+section.royalty .copy {
+  background-color: #eb0000;
+}
+
+section.royalty .copy:hover {
+  background-color: brown;
+}
+
+section.royalty .fb-share {
+  background-color: darkorchid;
+}
+
+section.royalty .fb-share:hover {
+  background-color: blue;
+}
+
+section.royalty .zalo-share {
+  background-color: violet;
+}
+
+section.royalty .zalo-share:hover {
+  background-color: cornflowerblue;
+}
+/* END ROYALTY */
