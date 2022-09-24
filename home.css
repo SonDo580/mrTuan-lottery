@@ -391,12 +391,16 @@ section.slider {
   section.feature > p {
     border: 5px dotted orange;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   section.feature > p a {
     text-decoration: none;
     color: blueviolet;
+  }
+
+  section.feature > p a:hover {
+    color: orange;
   }
   
   section.feature .features {
