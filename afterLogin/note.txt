@@ -1,0 +1,3 @@
+- Thay đổi chính sau login: các trang trong mục 'Tài khoản'.
+- Các trang còn lại chỉ thay đổi phần header và navbar.
+- Trang 'home' có thêm section chia sẻ nhận hoa hồng (royalty).
