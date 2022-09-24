@@ -25,11 +25,23 @@ main .instruction {
 }
 
 main .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 main .form-group > * {
   display: block;
+}
+
+main .form-group label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+main .form-group label span {
+    font-style: italic;
+    font-weight: normal;
+    color: gray;
 }
 
 main .form-group input {
@@ -44,6 +56,19 @@ main .form-group input {
 main .form-group .error {
   color: red;
   font-size: 0.9rem;
+}
+
+main form .policy {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
+
+main form input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 8px;
 }
 
 main form button {
