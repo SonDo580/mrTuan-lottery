@@ -1,0 +1,102 @@
+main {
+  margin: 20px 0;
+}
+
+/* ASIDE */
+aside {
+  width: 27%;
+  text-align: center;
+}
+
+aside h1 {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+aside h1 span {
+  color: red;
+}
+
+aside .top,
+aside .bottom {
+  border: 1px solid black;
+}
+
+aside .top {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+aside ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+aside li {
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: #f1f1f1;
+}
+
+aside li:hover,
+aside li.active {
+  background-color: #2b6ca3;
+}
+
+aside a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+aside li:hover a,
+aside li.active a {
+  color: #fff;
+}
+
+aside h2 {
+  color: #fff;
+  background-color: #2b6ca3;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+aside .bottom p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside .bottom p.coin span {
+  font-size: 1.8rem;
+  color: blueviolet;
+}
+
+aside .bottom p.coin img {
+  width: 35px;
+  margin-left: 8px;
+}
+
+aside button.deposit {
+  color: #fff;
+  background-color: #eb0000;
+  border-radius: 16px;
+  border: none;
+  padding: 5px 10px;
+  height: auto;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+aside button.deposit:hover {
+  background-color: darkred;
+}
+/* END ASIDE */
