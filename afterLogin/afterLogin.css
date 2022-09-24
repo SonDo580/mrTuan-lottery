@@ -1,0 +1,35 @@
+/* HEADER */
+.header-right .balance {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.header-right .balance span {
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.header-right .balance img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.header-right button.deposit {
+    color: #fff;
+    background-color: #eb0000;
+    border-radius: 16px;
+    padding: 5px 10px;
+    height: auto;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+.header-right button.deposit:hover {
+    background-color: darkred;
+}
+
+.header-right .media img {
+    margin-right: 2px;
+}
+/* END HEADER */
