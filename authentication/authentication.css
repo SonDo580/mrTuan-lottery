@@ -6,6 +6,7 @@ main {
 
 main .avatar {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 main .avatar img {
