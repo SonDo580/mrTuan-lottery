@@ -33,15 +33,15 @@ main .form-group > * {
 }
 
 main .form-group label {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
 }
 
 main .form-group label span {
-    font-style: italic;
-    font-weight: normal;
-    color: gray;
+  font-style: italic;
+  font-weight: normal;
+  color: gray;
 }
 
 main .form-group input {
@@ -59,16 +59,16 @@ main .form-group .error {
 }
 
 main form .policy {
-    margin-bottom: 20px;
-    margin-top: 40px;
-    font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 1.1rem;
 }
 
-main form input[type='checkbox'] {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-bottom: 8px;
+main form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 8px;
 }
 
 main form button {
@@ -84,6 +84,49 @@ main form button {
 main form button:hover {
   background-color: lightgray;
   color: black;
+}
+
+main .loginApp {
+  display: flex;
+  margin-top: 16px;
+  gap: 15px;
+}
+
+main .loginApp button {
+  flex-grow: 1;
+
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .loginApp img {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  margin-right: 5px;
+}
+
+main .loginApp .fb-login {
+  background-color: darkorchid;
+}
+
+main .loginApp .fb-login:hover {
+  background-color: blue;
+}
+
+main .loginApp .zalo-login {
+  background-color: violet;
+}
+
+main .loginApp .zalo-login:hover {
+  background-color: cornflowerblue;
 }
 
 main .links {
