@@ -42,7 +42,7 @@ main .interaction > span {
     font-size: .8rem;
 }
 
-main .interaction a {
+main .interaction > a {
     display: block;
     margin-left: auto;
 }
