@@ -166,6 +166,7 @@ nav li:hover .list {
 nav .list p {
   margin: 0;
   padding: 10px;
+  border-bottom: 1px solid white;
 }
 
 nav .list p:hover {
