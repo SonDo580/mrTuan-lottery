@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="./afterLogin.css" />
+    <link rel="stylesheet" href="./account.css">
   </head>
   <body>
     <header>
@@ -117,7 +118,7 @@
             Tài khoản <strong>Onbit<span>VN</span></strong>
           </h1>
           <ul>
-            <li><a href="#">Chi tiết tài khoản</a></li>
+            <li class="active"><a href="#">Chi tiết tài khoản</a></li>
             <li><a href="#">Vé đã mua</a></li>
             <li><a href="#">Mua dài hạn</a></li>
             <li><a href="#">Ngân hàng thụ hưởng</a></li>
@@ -128,10 +129,13 @@
         <div class="bottom">
           <h2>Số dư hiện tại</h2>
           <p>Đồng Onbit</p>
-          <p>
-            <span>0</span>
+          <p class="coin">
+            <span >0</span>
             <img src="../image/user/onbit-coin.png" alt="onbit coin" />
           </p>
+          <div class="button">
+            <button class="deposit">Nạp vào</button>
+          </div>
         </div>
       </aside>
       <div class="mainContent"></div>
