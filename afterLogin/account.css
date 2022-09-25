@@ -1,5 +1,6 @@
 main {
   margin: 20px 0;
+  display: flex;
 }
 
 /* ASIDE */
@@ -56,7 +57,7 @@ aside li.active a {
   color: #fff;
 }
 
-aside h2 {
+main h2 {
   color: #fff;
   background-color: #2b6ca3;
   font-size: 1.3rem;
@@ -64,6 +65,7 @@ aside h2 {
   margin-top: 0;
   margin-bottom: 20px;
   padding: 8px;
+  text-align: center;
 }
 
 aside .bottom p {
@@ -92,7 +94,7 @@ aside button.deposit {
   border: none;
   padding: 5px 10px;
   height: auto;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 10px 0;
 }
 
@@ -100,3 +102,67 @@ aside button.deposit:hover {
   background-color: darkred;
 }
 /* END ASIDE */
+
+/* MAIN CONTENT */
+.mainContent {
+  flex-grow: 1;
+  padding-left: 5px;
+}
+
+.mainContent h2 {
+  margin-bottom: 0;
+}
+
+.mainContent form {
+  padding: 10px 20px;
+}
+
+.mainContent .form-group {
+  margin-bottom: 20px;
+}
+
+.mainContent .form-group label {
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.mainContent .form-group label img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.mainContent .form-group input {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.mainContent .form-group select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: white;
+  margin-right: 0;
+}
+
+.mainContent .form-button {
+  text-align: center;
+}
+
+.mainContent .form-button button {
+  color: #fff;
+  background-color: #2b6ca3;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  font-size: 1.1rem;
+}
