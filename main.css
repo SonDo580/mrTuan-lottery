@@ -131,8 +131,7 @@ nav ul {
 }
 
 nav li {
-  padding: 15px;
-  padding-right: 0;
+  padding: 15px 10px;
   position: relative;
 }
 
