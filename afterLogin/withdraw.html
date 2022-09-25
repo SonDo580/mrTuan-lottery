@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onbit.vn - Yêu cầu rút tiền</title>
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./afterLogin.css" />
+    <link rel="stylesheet" href="./account.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="#">
+          <img src="../image/header/logo_onbit_full.gif" alt="onbit-logo" />
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="top-line">
+          <p>Xin chào, (User)!</p>
+        </div>
+        <div class="bottom-line">
+          <button class="share">Hoa hồng chia sẻ</button>
+          <p class="balance">
+            Số dư: <span>0</span>
+            <img src="../image/header/onbitcoin.png" alt="onbit coin" />
+          </p>
+          <button class="deposit">Nạp vào</button>
+          <div class="media">
+            <a href="https://www.facebook.com/onbit.vn"
+              ><img src="../image/footer/icon_facebook.png" alt="facebook-icon"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=nltt3i5X7FU"
+              ><img src="../image/footer/icon_youtube.png" alt="youtubr-icon"
+            /></a>
+            <a href="https://www.instagram.com/onbit.vn/"
+              ><img
+                src="../image/footer/icon_instagram.png"
+                alt="instagram-icon"
+            /></a>
+            <a href="https://twitter.com/onbitvn"
+              ><img src="../image/footer/icon_tweeter.png" alt="tweeter-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+          Chơi ngay <i class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="list">
+            <p><a href="#">Vietlott Keno</a></p>
+            <p><a href="#">US MegaMillions</a></p>
+            <p><a href="#">Euro Millions</a></p>
+            <p><a href="#">Oz Lotto</a></p>
+          </div>
+        </li>
+        <li>
+          Kết quả <i class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="list">
+            <p><a href="#">Vietlott Keno</a></p>
+            <p><a href="#">US MegaMillions</a></p>
+            <p><a href="#">Euro Millions</a></p>
+            <p><a href="#">Oz Lotto</a></p>
+          </div>
+        </li>
+        <li><a href="#">Người chiến thắng</a></li>
+        <li><a href="#">Tin tức và ưu đãi</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li>
+          Tài khoản <i class="fa-sharp fa-solid fa-caret-down"></i>
+          <div class="list">
+            <p><a href="#">Chi tiết tài khoản</a></p>
+            <p><a href="#">Vé đã mua</a></p>
+            <p><a href="#">Mua dài hạn</a></p>
+            <p><a href="#">Ngân hàng rút tiền</a></p>
+            <p><a href="#">Hoa hồng của bạn</a></p>
+            <p><a href="#">Đăng xuất</a></p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="banner">
+      <img class="active" src="../image/banner/banner1.jpg" alt="banner1" />
+      <img src="../image/banner/banner2.jpg" alt="banner2" />
+    </section>
+
+    <main>
+      <aside>
+        <div class="top">
+          <h1>
+            Tài khoản <strong>Onbit<span>VN</span></strong>
+          </h1>
+          <ul>
+            <li><a href="#">Chi tiết tài khoản</a></li>
+            <li><a href="#">Vé đã mua</a></li>
+            <li><a href="#">Mua dài hạn</a></li>
+            <li><a href="#">Ngân hàng thụ hưởng</a></li>
+            <li class="active"><a href="#">Yêu cầu rút tiền</a></li>
+            <li><a href="#">Hoa hồng của bạn</a></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <h2>Số dư hiện tại</h2>
+          <p>Đồng Onbit</p>
+          <p class="coin">
+            <span>0</span>
+            <img src="../image/user/onbit-coin.png" alt="onbit coin" />
+          </p>
+          <div class="button">
+            <button class="deposit">Nạp vào</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="mainContent">
+        <h2>Yêu cầu rút tiền</h2>
+        <form class="border">
+          <div class="form-group inline">
+            <input type="number" id="money" name="money" />
+            <button>Gửi yêu cầu</button>
+          </div>
+          <div class="instruction">
+            Nhập số tiền muốn rút ở ô trên và bấm <strong>Gửi yêu cầu</strong>.
+
+            <br><br>Số tiền tối thiểu cho mỗi lần rút là <strong>100,000</strong> VNĐ.
+
+            <br><br>Nếu số tiền yêu cầu lớn hơn <strong>500,000,000</strong> (năm trăm triệu) VNĐ, xin vui lòng gọi điện làm việc trực tiếp với nhân viên hỗ trợ theo hotline: 0967 401 489.
+
+            <br><br>Bảng phí rút tiền:
+            <br>từ 100,000 đến 1,000,000: 3,300đ + 2%
+            <br>lớn hơn 1,000,000 đến 10,000,000: 1.6%
+            <br>lớn hơn 10,000,000 đến 100,000,000: 0.8%
+            <br>lớn hơn 100,000,000 đến 300,000,000: 0.6%
+            <br>lớn hơn 300,000,000 đến 500,000,000: 0.4%
+
+            <br><br>Tỷ lệ quy đổi: <strong>1 Onbit = 10,000 VNĐ</strong>
+
+            <br><br>Yêu cầu sau khi được gửi đi, sẽ được thực hiện trong vòng tối đa <strong>7 ngày</strong> làm việc tuỳ theo số tiền yêu cầu.
+          </div>
+        </form>
+
+        <h2>Danh sách yêu cầu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Số tiền</th>
+                    <th>Phí</th>
+                    <th>Ngày tạo</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="empty">Chưa có giao dịch nào</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="policy">
+          <h4>Điều khoản sử dụng</h4>
+          <ul>
+            <li><a href="#">Điều khoản chung</a></li>
+            <li><a href="#">Điều khoản giao dịch</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+        <div class="connect">
+          <h4>Kết nối với chúng tôi</h4>
+          <div>
+            <a href="https://www.facebook.com/onbit.vn"
+              ><img src="../image/footer/icon_facebook.png" alt="facebook-icon"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=nltt3i5X7FU"
+              ><img src="../image/footer/icon_youtube.png" alt="youtubr-icon"
+            /></a>
+            <a href="https://www.instagram.com/onbit.vn/"
+              ><img
+                src="../image/footer/icon_instagram.png"
+                alt="instagram-icon"
+            /></a>
+            <a href="https://twitter.com/onbitvn"
+              ><img src="../image/footer/icon_tweeter.png" alt="tweeter-icon"
+            /></a>
+          </div>
+        </div>
+        <div class="payment">
+          <h4>Chấp nhận thanh toán</h4>
+          <div>
+            <img src="../image/footer/atm_card.png" alt="atm" />
+            <img src="../image/footer/visa_card.png" alt="visa" />
+            <img src="../image/footer/master_card.png" alt="master-card" />
+            <img src="../image/footer/logo-momo.png" alt="momo" />
+          </div>
+          <div class="vnpay">
+            <img src="../image/footer/logovnpay-qr.png" alt="vnpay" />
+          </div>
+        </div>
+        <div class="customer">
+          <h4>Chăm sóc khách hàng</h4>
+          <p>Hotline: <a href="#">0967.401.489</a></p>
+          <p>Giờ làm việc: 8:00 - 17:00</p>
+          <p>(Tất cả các ngày, bao gồm lễ Tết)</p>
+          <p>Email hỗ trợ: <a href="#">support@onbit.vn</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h3>CÔNG TY TNHH ONBIT VIỆT NAM</h3>
+        <p>
+          <a href="#">Giới thiệu</a>Giấy CNĐKDN: 0315283217, cấp bởi Sở KHĐT
+          thành phố Hồ Chí Minh
+        </p>
+        <p>
+          <a href="#">Liên hệ</a>Địa chỉ: Tầng 14, Toà nhà HM Town, 412 Nguyễn
+          Thị Minh Khai, Phường 5, Quận 3, Thành phố Hồ Chí Minh
+        </p>
+        <p class="copyright">Copyright © 2021 Onbit VN. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="fixed">
+      <a href="https://zalo.me/0967401489"
+        ><img class="zalo" src="../image/fixed/zalo-icon.png" alt="zalo-icon"
+      /></a>
+    </div>
+
+    <script src="../banner.js"></script>
+  </body>
+</html>
