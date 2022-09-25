@@ -138,7 +138,72 @@
           </div>
         </div>
       </aside>
-      <div class="mainContent"></div>
+
+      <div class="mainContent">
+        <h2>Chi tiết tài khoản</h2>
+        <form>
+          <div class="form-group">
+            <label for="lastName">Họ</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+          <div class="form-group">
+            <label for="firstName">Tên</label>
+            <input type="text" id="firstName" name="firstName">
+          </div>
+          <div class="form-group">
+            <label for="birthday">Ngày sinh</label>
+            <input type="date" id="birthday" name="birthday">
+          </div>
+          <div class="form-group">
+            <label for="idNumber">CMND</label>
+            <input type="text" id="idNumber" name="idNumber">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="sex">Giới tính</label>
+            <select name="sex" id="sex">
+              <option value="0">Nam</option>
+              <option value="1">Nữ</option>
+              <option value="2">Chưa rõ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <input type="text" id="address" name="address">
+          </div>
+          <div class="form-group">
+            <label for="phone">
+              Số điện thoại
+              <img src="../image/user/green-tick.png" alt="checked icon">
+            </label>
+            <input type="tel" id="phone" name="phone" value="0212536161" disabled>
+          </div>
+          <div class="form-button">
+            <button>Lưu thông tin</button>
+          </div>
+        </form>
+        <hr>
+        <form>
+          <div class="form-group">
+            <label for="currentPassword">Mật khẩu cũ</label>
+            <input type="password" id="currentPassword" name="currentPassword">
+          </div>
+          <div class="form-group">
+            <label for="newPassword">Mật khẩu mới</label>
+            <input type="password" id="newPassword" name="newPassword">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Nhập lại mật khẩu mới</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+          </div>
+          <div class="form-button">
+            <button>Thay đổi mật khẩu</button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer>
