@@ -35,13 +35,13 @@
 /* END HEADER */
 
 /* ROYALTY */
-section.royalty {
+.royalty {
   font-size: 1.1rem;
   text-align: center;
   border: 1px solid black;
 }
 
-section.royalty p span.phone {
+.royalty p span.phone {
   border: 0.5px solid blue;
   color: blueviolet;
   display: inline-block;
@@ -50,7 +50,7 @@ section.royalty p span.phone {
   font-weight: bold;
 }
 
-section.royalty p .royalty-link {
+.royalty p .royalty-link {
   font-size: 1.3rem;
   border: 1px dashed blue;
   color: blueviolet;
@@ -58,14 +58,14 @@ section.royalty p .royalty-link {
   padding: 5px;
 }
 
-section.royalty .buttons {
+.royalty .buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 10px 0 20px;
 }
 
-section.royalty button {
+.royalty button {
   height: 40px;
   border: none;
   color: white;
@@ -77,33 +77,33 @@ section.royalty button {
   align-items: center;
 }
 
-section.royalty button img {
+.royalty button img {
   width: 30px;
   aspect-ratio: 1 / 1;
   margin-right: 5px;
 }
 
-section.royalty .copy {
+.royalty .copy {
   background-color: #eb0000;
 }
 
-section.royalty .copy:hover {
+.royalty .copy:hover {
   background-color: brown;
 }
 
-section.royalty .fb-share {
+.royalty .fb-share {
   background-color: darkorchid;
 }
 
-section.royalty .fb-share:hover {
+.royalty .fb-share:hover {
   background-color: blue;
 }
 
-section.royalty .zalo-share {
+.royalty .zalo-share {
   background-color: violet;
 }
 
-section.royalty .zalo-share:hover {
+.royalty .zalo-share:hover {
   background-color: cornflowerblue;
 }
 /* END ROYALTY */
