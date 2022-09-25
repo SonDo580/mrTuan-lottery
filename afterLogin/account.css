@@ -156,6 +156,7 @@ aside button.deposit:hover {
 
 .mainContent .form-button {
   text-align: center;
+  margin: 10px 0;
 }
 
 .mainContent .form-button button {
@@ -165,4 +166,18 @@ aside button.deposit:hover {
   padding: 8px 16px;
   border: none;
   font-size: 1.1rem;
+}
+
+.mainContent .form-button button:hover {
+  background-color: #2c86d3;
+}
+
+.mainContent form.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.mainContent form.grid .form-button {
+  grid-column: 1 / -1;
 }
