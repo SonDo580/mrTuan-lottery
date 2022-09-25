@@ -219,6 +219,27 @@ aside button.deposit:hover {
   padding: 20px 0;
 }
 
+.mainContent table.statistics tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainContent table.statistics tr:nth-child(even) {
+  background-color: cyan;
+}
+
+.mainContent table.statistics tr:hover {
+  background-color: lightskyblue;
+}
+
+.mainContent table.statistics td {
+  padding: 10px;
+  border: 1px solid lightgray;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .mainContent .qrCode {
   display: grid;
   grid-template-columns: 2fr 1fr;
