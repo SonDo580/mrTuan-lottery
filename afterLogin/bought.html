@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Onbit.vn - Chi tiết tài khoản
+      Onbit.vn - Vé đã mua
     </title>
 
     <!-- Roboto Font -->
@@ -117,8 +117,8 @@
             Tài khoản <strong>Onbit<span>VN</span></strong>
           </h1>
           <ul>
-            <li class="active"><a href="#">Chi tiết tài khoản</a></li>
-            <li><a href="#">Vé đã mua</a></li>
+            <li><a href="#">Chi tiết tài khoản</a></li>
+            <li class="active"><a href="#">Vé đã mua</a></li>
             <li><a href="#">Mua dài hạn</a></li>
             <li><a href="#">Ngân hàng thụ hưởng</a></li>
             <li><a href="#">Yêu cầu rút tiền</a></li>
@@ -139,70 +139,39 @@
       </aside>
 
       <div class="mainContent">
-        <h2>Chi tiết tài khoản</h2>
-        <form class="grid">
-          <div class="form-group">
-            <label for="lastName">Họ</label>
-            <input type="text" id="lastName" name="lastName">
-          </div>
-          <div class="form-group">
-            <label for="firstName">Tên</label>
-            <input type="text" id="firstName" name="firstName">
-          </div>
-          <div class="form-group">
-            <label for="birthday">Ngày sinh</label>
-            <input type="date" id="birthday" name="birthday">
-          </div>
-          <div class="form-group">
-            <label for="idNumber">CMND</label>
-            <input type="text" id="idNumber" name="idNumber">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="sex">Giới tính</label>
-            <select name="sex" id="sex">
-              <option value="0">Nam</option>
-              <option value="1">Nữ</option>
-              <option value="2">Chưa rõ</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="address">Địa chỉ</label>
-            <input type="text" id="address" name="address">
-          </div>
-          <div class="form-group">
-            <label for="phone">
-              Số điện thoại
-              <img src="../image/user/green-tick.png" alt="checked icon">
-            </label>
-            <input type="tel" id="phone" name="phone" value="0212536161" disabled>
-          </div>
-          <div class="form-button">
-            <button>Lưu thông tin</button>
-          </div>
-        </form>
-        <hr>
-        <form class="grid">
-          <div class="form-group">
-            <label for="currentPassword">Mật khẩu cũ</label>
-            <input type="password" id="currentPassword" name="currentPassword">
-          </div>
-          <div></div>
-          <div class="form-group">
-            <label for="newPassword">Mật khẩu mới</label>
-            <input type="password" id="newPassword" name="newPassword">
-          </div>
-          <div class="form-group">
-            <label for="confirmPassword">Nhập lại mật khẩu mới</label>
-            <input type="password" id="confirmPassword" name="confirmPassword">
-          </div>
-          <div class="form-button">
-            <button>Thay đổi mật khẩu</button>
-          </div>
-        </form>
+        <h2>Thông tin vé đã mua</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã giao dịch</th>
+                    <th>Loại vé</th>
+                    <th>Ngày xổ </th>
+                    <th>Chi tiết</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="empty">Chưa có giao dịch nào</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Lịch sử giao dịch</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã giao dịch</th>
+                    <th>Onbit</th>
+                    <th>Thời gian</th>
+                    <th>Loại hình</th>
+                    <th>Số dư</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5" class="empty">Chưa có giao dịch nào</td>
+                </tr>
+            </tbody>
+        </table>
       </div>
     </main>
 

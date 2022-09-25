@@ -181,3 +181,23 @@ aside button.deposit:hover {
 .mainContent form.grid .form-button {
   grid-column: 1 / -1;
 }
+
+.mainContent table {
+  width: 100%;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.mainContent table thead {
+  border-bottom: 2px solid #ddd;
+}
+
+.mainContent table th {
+  padding: 10px;
+}
+
+.mainContent table td.empty {
+  text-align: center;
+  padding: 20px 0;
+}
