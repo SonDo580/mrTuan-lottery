@@ -180,7 +180,7 @@ section.banner {
 
 section.banner img {
   width: 100%;
-  height: 360px;
+  aspect-ratio: 5 / 2;
   display: none;
 }
 
@@ -259,6 +259,11 @@ footer .customer a {
   color: violet;
 }
 
+footer .customer i {
+  display: none;
+  color: gray;
+}
+
 .footer-bottom p {
   margin: 0;
   margin-bottom: 10px;
@@ -304,11 +309,6 @@ footer .copyright {
   /* NAVBAR */
   nav {
     display: none;
-  }
-
-  /* BANNER */
-  section.banner img {
-    height: 130px;
   }
 
   /* FOOTER */
@@ -357,6 +357,14 @@ footer .copyright {
 
   footer .customer a {
     color: white;
+  }
+
+  footer .customer span {
+    display: none;
+  }
+
+  footer .customer i {
+    display: inline;
   }
 
   .footer-bottom h3 {
