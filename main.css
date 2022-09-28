@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0 150px;
 }
 
@@ -197,6 +197,12 @@ footer {
   font-size: 0.9rem;
 }
 
+footer > h3 {
+  display: none;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
 .footer-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -278,3 +284,95 @@ footer .copyright {
   height: auto;
 }
 /* END FIXED ICON */
+
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+
+  /* HEADER */
+  .header-left img {
+    width: 40%;
+    aspect-ratio: auto;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  /* NAVBAR */
+  nav {
+    display: none;
+  }
+
+  /* BANNER */
+  section.banner img {
+    height: 130px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  footer > h3 {
+    display: block;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .policy {
+    display: none;
+  }
+
+  footer .connect h4 {
+    display: none;
+  }
+
+  footer .payment h4 {
+    font-weight: normal;
+  }
+
+  footer .payment .vnpay {
+    margin: 2px auto;
+  }
+
+  footer .customer {
+    margin: 10px 0;
+  }
+
+  footer .customer h4 {
+    display: none;
+  }
+
+  footer .customer p:nth-of-type(2),
+  footer .customer p:nth-of-type(3) {
+    display: none;
+  }
+
+  footer .customer a {
+    color: white;
+  }
+
+  .footer-bottom h3 {
+    display: none;
+  }
+
+  .footer-bottom a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
