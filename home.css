@@ -428,4 +428,8 @@ section.slider {
     section.slider {
       display: none;
     }
+
+    section.result {
+      display: none;
+    }
   }
