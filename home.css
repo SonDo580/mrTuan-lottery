@@ -424,3 +424,8 @@ section.slider {
   }
   /* END FEATURE */
   
+  @media screen and (max-width: 576px) {
+    section.slider {
+      display: none;
+    }
+  }
