@@ -15,6 +15,7 @@ body button:hover {
 header {
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .header-left {
@@ -40,30 +41,30 @@ header {
   padding: 5px;
 }
 
-.header-right button {
+header button {
   height: 40px;
   border: none;
   font-weight: bold;
   color: white;
 }
 
-.header-right button.login {
+header button.login {
   background-color: red;
   padding: 5px 15px;
 }
 
-.header-right button.login:hover {
+header button.login:hover {
   background-color: gainsboro;
   color: black;
 }
 
-.header-right button.signup {
+header button.signup {
   background-color: yellow;
   color: black;
   padding: 5px 15px;
 }
 
-.header-right button.signup:hover {
+header button.signup:hover {
   background-color: gainsboro;
 }
 
@@ -73,7 +74,7 @@ header {
   align-items: center;
 }
 
-.header-right img {
+header button img {
   width: 30px;
   aspect-ratio: 1 / 1;
   margin-right: 5px;
@@ -92,31 +93,43 @@ header {
   background-color: green;
 }
 
-.header-right button.fb-login {
+header button.fb-login {
   background-color: darkorchid;
   margin-right: 5px;
   border-radius: 5px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.header-right button.fb-login:hover {
+header button.fb-login:hover {
   background-color: blue;
 }
 
-.header-right button.zalo-login {
+header button.zalo-login {
   background-color: violet;
   border-radius: 5px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.header-right button.zalo-login:hover {
+header button.zalo-login:hover {
   background-color: cornflowerblue;
 }
+
+header .toggle-button {
+  display: none;
+}
 /* END HEADER */
+
+/* MOBILE MENU */
+.mobile-menu {
+  display: none;
+}
+/* END MOBILE MENU */
 
 /* NAVBAR */
 nav ul {
@@ -290,13 +303,24 @@ footer .copyright {
 }
 /* END FIXED ICON */
 
-
 @media screen and (max-width: 576px) {
   body {
     padding: 0;
   }
 
+  button:active,
+  a:active {
+    background-color: cyan;
+  }
+
   /* HEADER */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+
   .header-left img {
     width: 40%;
     aspect-ratio: auto;
@@ -311,10 +335,123 @@ footer .copyright {
     display: none;
   }
 
+  /* MOBILE MENU */
+  header .toggle-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  header .toggle-button:active {
+    background-color: cyan;
+  }
+
+  header .toggle-button i {
+    font-size: 2.5rem;
+  }
+
+  header button.fb-login {
+    margin-right: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    font-size: 1.2rem;
+  }
+
+  .mobile-menu .wrapper {
+    background-color: white;
+    width: 80%;
+    height: 100%;
+  }
+
+  .mobile-menu .top {
+    height: 40%;
+  }
+
+  .mobile-menu .top > p {
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+
+  .mobile-menu .top > p a {
+    color: red;
+  }
+
+  .mobile-menu .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 20px 20px 0;
+  }
+
+  .mobile-menu button {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .mobile-menu button.fb-login,
+  .mobile-menu button.zalo-login {
+    grid-column: 1 / -1;
+  }
+
+  .mobile-menu .logo img {
+    width: 40%;
+    aspect-ratio: auto;
+  }
+
+  .mobile-menu ul {
+    background-color: black;
+    height: 60%;
+    padding-left: 0;
+  }
+
+  .mobile-menu ul li {
+    border-bottom: 1px solid grey;
+  }
+
+  .mobile-menu ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+
+  .mobile-menu ul a p {
+    font-size: 0.9rem;
+  }
+
+  .mobile-menu ul a i {
+    color: red;
+    margin-right: 5px;
+  }
+
+  .mobile-menu ul a:active {
+    color: black;
+  }
+
+  .mobile-menu ul a:active i {
+    color: orange;
+  }
+
+  /* BANNER */
+  section.banner {
+    margin-top: 60px;
+  }
+
   /* FOOTER */
   footer {
     text-align: center;
     padding: 5px 0;
+    font-size: 1.05rem;
   }
 
   footer > h3 {
