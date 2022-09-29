@@ -380,20 +380,41 @@ footer .copyright {
     height: 40%;
   }
 
-  .mobile-menu .top > p {
-    padding: 0 20px;
-    margin-top: 10px;
+  .mobile-menu .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .mobile-menu .top > p a {
-    color: red;
+  .mobile-menu .logo img {
+    width: 50%;
+    aspect-ratio: auto;
+  }
+
+  .mobile-menu .logo a:active {
+    background: none;
+  }
+
+  .mobile-menu .logo img:active {
+    background-color: cyan;
+  }
+
+  .mobile-menu .close-menu {
+    display: block;
+    padding: 5px;
+    font-size: 2rem;
+    color: darkgreen;
+  }
+
+  .mobile-menu .close-menu:active {
+    background-color: cyan;
   }
 
   .mobile-menu .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    padding: 20px 20px 0;
+    padding: 10px 20px 0;
   }
 
   .mobile-menu button {
@@ -406,13 +427,13 @@ footer .copyright {
     grid-column: 1 / -1;
   }
 
-  .mobile-menu .logo img {
-    width: 40%;
-    aspect-ratio: auto;
+  .mobile-menu .top > p {
+    padding: 0 20px;
+    margin-top: 10px;
   }
 
-  .mobile-menu .logo img:active {
-    background-color: cyan;
+  .mobile-menu .top > p a {
+    color: red;
   }
 
   .mobile-menu ul {
