@@ -119,13 +119,10 @@ header button.zalo-login {
 header button.zalo-login:hover {
   background-color: cornflowerblue;
 }
-
-header .toggle-button {
-  display: none;
-}
 /* END HEADER */
 
 /* MOBILE MENU */
+.toggle-menu,
 .mobile-menu {
   display: none;
 }
@@ -336,18 +333,18 @@ footer .copyright {
   }
 
   /* MOBILE MENU */
-  header .toggle-button {
+  .toggle-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5px;
   }
 
-  header .toggle-button:active {
+  .toggle-menu:active {
     background-color: cyan;
   }
 
-  header .toggle-button i {
+  .toggle-menu i {
     font-size: 2.5rem;
   }
 
