@@ -365,6 +365,10 @@ footer .copyright {
     transform: translateX(-100%);
   }
 
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+
   .mobile-menu .wrapper {
     background-color: white;
     width: 80%;
