@@ -365,6 +365,7 @@ footer .copyright {
     width: 100%;
     height: 100vh;
     font-size: 1.2rem;
+    transform: translateX(-100%);
   }
 
   .mobile-menu .wrapper {
@@ -406,6 +407,10 @@ footer .copyright {
   .mobile-menu .logo img {
     width: 40%;
     aspect-ratio: auto;
+  }
+
+  .mobile-menu .logo img:active {
+    background-color: cyan;
   }
 
   .mobile-menu ul {
