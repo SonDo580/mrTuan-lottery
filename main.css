@@ -216,7 +216,7 @@ footer > h3 {
 
 .footer-top {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 2fr 2fr 3fr 2fr;
 }
 
 footer .policy ul {
@@ -300,10 +300,16 @@ footer .copyright {
   height: auto;
 }
 /* END FIXED ICON */
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 70px;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 992px) {
   body {
     padding: 0 50px;
-    margin: 0;
   }
 
   button:active,
@@ -574,7 +580,4 @@ footer .copyright {
   section.banner {
     margin-top: 65px;
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
