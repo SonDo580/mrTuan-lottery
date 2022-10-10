@@ -513,4 +513,40 @@ section.feature .card p {
   section.intro {
     display: none;
   }
+
+  /* FEATURE */
+  section.feature {
+    background-color: lightcyan;
+    padding: 20px 0 10px;
+  }
+
+  section.feature h1 {
+    display: none;
+  }
+
+  section.feature > p {
+    margin: 20px;
+    margin-top: 0;
+  }
+
+  section.feature .features {
+    display: block;
+    padding: 0 20px;
+  }
+
+  section.feature .card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+  }
+
+  section.feature .card img {
+    width: 80%;
+  }
+
+  section.feature .card p {
+    padding: 0 10px;
+    text-align: left;
+    font-size: 1.05rem;
+  }
 }
