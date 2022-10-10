@@ -9,8 +9,12 @@ $("section.slider .owl-carousel").owlCarousel({
     900: {
       items: 4,
     },
-    0: {
+    700: {
       items: 3,
+    },
+    0: {
+      items: 2,
+      margin: 40,
     },
   },
 });
