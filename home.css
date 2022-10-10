@@ -491,4 +491,9 @@ section.feature .card p {
   section.process .step3 {
     background-color: blueviolet;
   }
+
+  /* INTRO */
+  section.intro {
+    display: none;
+  }
 }
