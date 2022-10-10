@@ -450,33 +450,15 @@ section.feature .card p {
   section.intro .right {
     display: none;
   }
-}
 
-@media screen and (max-width: 768px) {
-  /* PROCESS */
-  section.process .steps {
-    padding: 0 20px;
-  }
-
-  section.slider {
-    padding: 0 40px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  /* SLIDER */
-  section.slider {
-    display: none;
-  }
-
-  /* RESULT */
+  /* RESULT (WINNER) */
   section.result {
     background-color: white;
     display: block;
     padding: 5px;
   }
 
-  section.result h1 {
+  section.result .left h1 {
     background-color: red;
     color: white;
     padding: 5px 0;
@@ -486,6 +468,10 @@ section.feature .card p {
     font-size: 1.4rem;
   }
 
+  section .winner-display {
+    padding: 0 10%;
+  }
+
   section.result .right {
     display: none;
   }
@@ -493,7 +479,32 @@ section.feature .card p {
   section.result .left .update {
     display: none;
   }
+}
 
+@media screen and (max-width: 768px) {
+  /* SLIDER */
+  section.slider {
+    padding: 0 40px;
+  }
+
+  /* RESULT (WINNER) */
+  section .winner-display {
+    padding: 0 5%;
+  }
+
+  /* PROCESS */
+  section.process .steps {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* SLIDER */
+  section.slider {
+    display: none;
+  }
+
+  /* RESULT (WINNER) */
   section.result .winner-display img {
     height: 70%;
   }
