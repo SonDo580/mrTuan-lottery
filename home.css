@@ -96,6 +96,12 @@ section.slider .owl-dots .owl-dot.active span {
 }
 /* END SLIDER */
 
+/* TICKET */
+section.ticket {
+  display: none;
+}
+/* ENDTICKET */
+
 /* RESULT */
 section.result {
   display: grid;
@@ -441,10 +447,74 @@ section.feature .card p {
 }
 
 @media screen and (max-width: 768px) {
+  /* SLIDER */
   section.slider {
     display: none;
   }
 
+  /* TICKET */
+  section.ticket {
+    display: block;
+    padding: 5px;
+  }
+
+  section.ticket .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 0px 10px;
+  }
+
+  section.ticket .card-img {
+    grid-row: 1 / -1;
+  }
+
+  section.ticket img {
+    width: 90%;
+  }
+
+  section.ticket .card p {
+    margin: 0;
+  }
+
+  section.ticket .card p:first-of-type {
+    grid-column: 2 / -1;
+    margin-top: 10px;
+  }
+
+  section.ticket .card .price {
+    font-size: 1.5rem;
+  }
+
+  section.ticket .card .unit {
+    color: gray;
+  }
+
+  section.ticket .card .time {
+    color: blueviolet;
+    align-self: start;
+  }
+
+  section.ticket .card .play {
+    text-align: right;
+  }
+
+  section.ticket .card .play a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+  }
+
+  section.ticket .card .play a:active {
+    color: lightgray;
+  }
+
+  /* RESULT */
   section.result {
     display: none;
   }
