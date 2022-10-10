@@ -454,7 +454,9 @@ section.feature .card p {
 
   /* TICKET */
   section.ticket {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 5px;
   }
 
@@ -465,6 +467,7 @@ section.feature .card p {
     border: 2px solid blue;
     border-radius: 5px;
     padding: 0px 10px;
+    position: relative;
   }
 
   section.ticket .card-img {
@@ -485,7 +488,7 @@ section.feature .card p {
   }
 
   section.ticket .card .price {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   section.ticket .card .unit {
@@ -512,6 +515,14 @@ section.feature .card p {
 
   section.ticket .card .play a:active {
     color: lightgray;
+  }
+
+  section.ticket .card .badge {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 60px;
+    height: auto;
   }
 
   /* RESULT */
