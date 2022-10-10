@@ -6,8 +6,11 @@ $("section.slider .owl-carousel").owlCarousel({
   autoplay: true,
   autoplayTimeout: 3000,
   responsive: {
-    0: {
+    900: {
       items: 4,
+    },
+    0: {
+      items: 3,
     },
   },
 });
