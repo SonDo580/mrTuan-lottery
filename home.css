@@ -424,6 +424,22 @@ section.feature .card p {
 }
 /* END FEATURE */
 
+@media screen and (max-width: 992px) {
+  /* INTRO */
+  section.intro {
+    display: block;
+  }
+
+  section.intro .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.intro .right {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section.slider {
     display: none;
@@ -433,6 +449,7 @@ section.feature .card p {
     display: none;
   }
 
+  /* PROCESS */
   section.process .steps {
     padding: 0 20px;
   }
