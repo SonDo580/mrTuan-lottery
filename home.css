@@ -517,15 +517,16 @@ section.feature .card p {
   section.ticket {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 5px;
+    gap: 15px;
+    padding: 10px;
   }
 
   section.ticket .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    border: 2px solid blue;
+
+    border: 3px solid blue;
     border-radius: 5px;
     padding: 0px 10px;
     position: relative;
@@ -587,6 +588,77 @@ section.feature .card p {
   }
 
   /* MOBILE RESULT */
+  section.mobile-result {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  section.mobile-result a.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    text-decoration: none;
+    color: black;
+    border: 3px solid lightgreen;
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+
+  section.mobile-result .card img {
+    width: 95%;
+  }
+
+  section.mobile-result .card .content p:first-of-type {
+    margin-bottom: 0;
+  }
+
+  section.mobile-result .card .money {
+    font-size: 1.4rem;
+  }
+
+  section.mobile-result .card .unit {
+    color: gray;
+  }
+
+  section.mobile-result .card .date {
+    color: blueviolet;
+    margin: 5px 0;
+  }
+
+  section.mobile-result .card .balls {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 3px;
+    padding-right: 10px;
+  }
+
+  section.mobile-result .card .ball {
+    border: 1px solid gray;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.mobile-result .card .summary {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 3px;
+    font-size: 1.05rem;
+    padding: 0 5px;
+  }
+
+  section.mobile-result .card .summary p {
+    flex-grow: 1;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 6px 8px;
+    margin-bottom: 0;
+  }
 
   /* PROCESS */
   section.process {
