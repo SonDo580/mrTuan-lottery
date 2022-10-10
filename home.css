@@ -102,6 +102,12 @@ section.ticket {
 }
 /* ENDTICKET */
 
+/* MOBILE-RESULT */
+section.mobile-result {
+  display: none;
+}
+/* END MOBILE-RESULT */
+
 /* RESULT */
 section.result {
   display: grid;
@@ -452,6 +458,46 @@ section.feature .card p {
     display: none;
   }
 
+  /* RESULT */
+  section.result {
+    background-color: white;
+    display: block;
+    padding: 5px;
+  }
+
+  section.result h1 {
+    background-color: red;
+    color: white;
+    padding: 5px 0;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  section.result .right {
+    display: none;
+  }
+
+  section.result .left .update {
+    display: none;
+  }
+
+  section.result .winner-display img {
+    height: 70%;
+  }
+
+  section.result .winner-display img[alt="winner-cup"] {
+    display: none;
+  }
+
+  /* PROCESS */
+  section.process .steps {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
   /* TICKET */
   section.ticket {
     display: flex;
@@ -525,46 +571,6 @@ section.feature .card p {
     height: auto;
   }
 
-  /* RESULT */
-  section.result {
-    background-color: white;
-    display: block;
-    padding: 5px;
-  }
-
-  section.result h1 {
-    background-color: red;
-    color: white;
-    padding: 5px 0;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-  }
-
-  section.result .right {
-    display: none;
-  }
-
-  section.result .left .update {
-    display: none;
-  }
-
-  section.result .winner-display img {
-    height: 70%;
-  }
-
-  section.result .winner-display img[alt='winner-cup'] {
-    display: none;
-  }
-
-  /* PROCESS */
-  section.process .steps {
-    padding: 0 20px;
-  }
-}
-
-@media screen and (max-width: 576px) {
   /* PROCESS */
   section.process {
     background-image: none;
