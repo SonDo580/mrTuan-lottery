@@ -527,6 +527,34 @@ section.feature .card p {
 
   /* RESULT */
   section.result {
+    background-color: white;
+    display: block;
+    padding: 5px;
+  }
+
+  section.result h1 {
+    background-color: red;
+    color: white;
+    padding: 5px 0;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  section.result .right {
+    display: none;
+  }
+
+  section.result .left .update {
+    display: none;
+  }
+
+  section.result .winner-display img {
+    height: 70%;
+  }
+
+  section.result .winner-display img[alt='winner-cup'] {
     display: none;
   }
 
