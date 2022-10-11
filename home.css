@@ -544,8 +544,30 @@ section.feature .card p {
     display: none;
   }
 
+  /* UI CONTROLLER */
+  div.changeUI {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 10px 20px;
+    border-bottom: 1px solid blue;
+  }
+
+  div.changeUI button {
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    font-size: 1.05rem;
+  }
+
+  div.changeUI button.active {
+    background-color: blueviolet;
+    color: white;
+  }
+
   /* TICKET */
-  section.ticket {
+  section.ticket.active {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -619,7 +641,7 @@ section.feature .card p {
   }
 
   /* MOBILE RESULT */
-  section.mobile-result {
+  section.mobile-result.active {
     display: flex;
     flex-direction: column;
     gap: 15px;
