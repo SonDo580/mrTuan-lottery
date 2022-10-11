@@ -458,7 +458,7 @@ section.feature .card p {
     padding: 5px;
   }
 
-  section.result .left h1 {
+  section.result h1 {
     background-color: red;
     color: white;
     padding: 5px 0;
@@ -468,16 +468,33 @@ section.feature .card p {
     font-size: 1.4rem;
   }
 
-  section .winner-display {
+  section.result .winner-display {
     padding: 0 10%;
-  }
-
-  section.result .right {
-    display: none;
   }
 
   section.result .left .update {
     display: none;
+  }
+
+  section.result .right {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+  }
+
+  section.result .right h1 {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  section.result .cards {
+    height: 250px;
+    overflow: scroll;
+    background-color: lightcyan;
+  }
+
+  section.result a.card {
+    padding: 10px calc((100vw - 550px) / 2);
   }
 }
 
@@ -488,8 +505,12 @@ section.feature .card p {
   }
 
   /* RESULT (WINNER) */
-  section .winner-display {
+  section.result .winner-display {
     padding: 0 5%;
+  }
+
+  section.result a.card {
+    padding: 10px calc((100vw - 450px) / 2);
   }
 
   /* PROCESS */
@@ -510,6 +531,10 @@ section.feature .card p {
   }
 
   section.result .winner-display img[alt="winner-cup"] {
+    display: none;
+  }
+
+  section.result .right {
     display: none;
   }
 
