@@ -308,6 +308,10 @@ footer .copyright {
   gap: 10px;
 }
 
+.fixed .icons .hideIcon {
+  display: none;
+}
+
 .fixed .zalo {
   width: 60px;
   height: auto;
@@ -584,7 +588,7 @@ footer .copyright {
   }
 
   .fixed .icons.active {
-    transform: translateX(20%);
+    transform: translateX(10%);
   }
 }
 
