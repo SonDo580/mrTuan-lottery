@@ -551,17 +551,21 @@ footer .copyright {
   }
 
   /* FIXED ICONS */
+  .fixed {
+    right: 10px;
+  }
+
   .fixed .showIcon {
     display: block;
-    width: 50px;
-    height: 50px;
-    background-color: green;
-    border-radius: 50%;
+    width: 80px;
+    aspect-ratio: 1;
+    background-color: transparent;
     border: none;
   }
 
   .fixed .showIcon img {
     width: 100%;
+    border-radius: 50%;
   }
 
   .fixed .icons {
@@ -573,6 +577,11 @@ footer .copyright {
   body {
     padding: 0;
     margin: 0;
+  }
+
+  /* FIXED ICONS */
+  .fixed {
+    bottom: 10px;
   }
 }
 
@@ -606,5 +615,10 @@ footer .copyright {
   /* BANNER */
   section.banner {
     margin-top: 65px;
+  }
+
+  /* FIXED ICONS */
+  .fixed .showIcon {
+    width: 60px;
   }
 }
