@@ -1,3 +1,4 @@
+// CONTROL SLIDER
 $("section.slider .owl-carousel").owlCarousel({
   loop: true,
   margin: 20,
@@ -19,6 +20,7 @@ $("section.slider .owl-carousel").owlCarousel({
   },
 });
 
+// ALTERNATE WINNER DISPLAY
 const winnerCards = document.querySelectorAll("section.result .card-winner");
 const numWinners = winnerCards.length;
 setInterval(() => {
@@ -52,3 +54,36 @@ setInterval(() => {
     return;
   }
 }, 3000);
+
+// CONTROL MOBILE UI
+const showTicketButton = document.querySelector(".changeUI .showTicket");
+const showResultButton = document.querySelector(".changeUI .showResult");
+const ticketSection = document.querySelector("section.ticket");
+const mobileResultSection = document.querySelector("section.mobile-result");
+
+showTicketButton.addEventListener("click", showTicket);
+showResultButton.addEventListener("click", showResult);
+
+function showTicket() {
+  if (showTicketButton.classList.contains("active")) {
+    return;
+  }
+
+  showTicketButton.classList.add("active");
+  ticketSection.classList.add("active");
+
+  showResultButton.classList.remove("active");
+  mobileResultSection.classList.remove("active");
+}
+
+function showResult() {
+  if (showResultButton.classList.contains("active")) {
+    return;
+  }
+
+  showTicketButton.classList.remove("active");
+  ticketSection.classList.remove("active");
+
+  showResultButton.classList.add("active");
+  mobileResultSection.classList.add("active");
+}
