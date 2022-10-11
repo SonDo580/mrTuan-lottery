@@ -442,6 +442,12 @@ section.feature .card p {
 }
 /* END FEATURE */
 
+/* CONTACT */
+section.contact {
+  display: none;
+}
+/* END CONTACT */
+
 @media screen and (max-width: 992px) {
   /* INTRO */
   section.intro {
@@ -805,5 +811,36 @@ section.feature .card p {
     padding: 0 10px;
     text-align: left;
     font-size: 1.05rem;
+  }
+
+  /* CONTACT */
+  section.contact {
+    display: block;
+  }
+
+  section.contact h1 {
+    text-align: center;
+    font-weight: normal;
+  }
+
+  section.contact .contact-info {
+    padding: 0 20px;
+  }
+
+  section.contact p {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+  }
+
+  section.contact p i {
+    color: gray;
+  }
+
+  section.contact p a {
+    color: black;
+  }
+
+  section.contact #map iframe {
+    width: 100%;
   }
 }
