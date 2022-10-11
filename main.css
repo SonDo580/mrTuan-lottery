@@ -298,6 +298,10 @@ footer .copyright {
   right: 30px;
 }
 
+.fixed .showIcon {
+  display: none;
+}
+
 .fixed .icons {
   display: flex;
   flex-direction: column;
@@ -543,6 +547,24 @@ footer .copyright {
   }
 
   .footer-bottom a {
+    display: none;
+  }
+
+  /* FIXED ICONS */
+  .fixed .showIcon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    border: none;
+  }
+
+  .fixed .showIcon img {
+    width: 100%;
+  }
+
+  .fixed .icons {
     display: none;
   }
 }
