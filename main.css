@@ -542,7 +542,9 @@ footer .copyright {
     padding: 0;
     margin: 0;
   }
+}
 
+@media screen and (max-width: 576px) {
   /* HEADER */
   header {
     position: fixed;
@@ -551,14 +553,6 @@ footer .copyright {
     background-color: white;
   }
 
-  /* BANNER */
-  section.banner {
-    margin-top: 70px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  /* HEADER */
   .header-left img {
     width: 40%;
   }
