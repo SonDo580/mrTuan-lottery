@@ -96,6 +96,12 @@ section.slider .owl-dots .owl-dot.active span {
 }
 /* END SLIDER */
 
+/* UI CONTROLLER */
+div.changeUI {
+  display: none;
+}
+/* END UI CONTROLLER */
+
 /* TICKET */
 section.ticket {
   display: none;
