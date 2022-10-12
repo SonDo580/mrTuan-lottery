@@ -355,8 +355,7 @@ footer .copyright {
   .fixed .icons {
     position: fixed;
     bottom: 0;
-    left: 0;
-    transform: translateX(100%);
+    left: 100%;
     transition: transform 0.5s;
 
     flex-direction: row;
@@ -368,7 +367,7 @@ footer .copyright {
   }
 
   .fixed .icons.active {
-    transform: translateX(10%);
+    transform: translateX(max(-70%, -400px));
   }
 }
 
