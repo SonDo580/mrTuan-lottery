@@ -61,39 +61,42 @@ section.slider .card .play a {
   border-radius: 10px;
 }
 
-section.slider .owl-nav button {
+section.slider .owl-nav .owl-prev,
+section.slider .owl-nav .owl-next {
   position: absolute;
   top: 35%;
-  width: 50px;
-  height: 50px;
-  background-color: white !important;
-  border: 2px solid orange !important;
-  border-radius: 50% !important;
 }
 
-section.slider .owl-nav button span {
-  font-size: 2rem;
-  color: orange;
-  font-weight: bold;
+section.slider .owl-nav .owl-prev:hover,
+section.slider .owl-nav .owl-next:hover {
+  background: none;
 }
 
 section.slider .owl-nav .owl-prev {
-  left: -30px;
+  left: -20px;
 }
 
 section.slider .owl-nav .owl-next {
-  right: -30px;
+  right: -20px;
+}
+
+section.slider .owl-nav button span {
+  display: block;
+  font-size: 2rem;
+  color: orangered;
+  font-weight: bold;
+  transform: scaleY(500%) scaleX(200%);
 }
 
 section.slider .owl-dots .owl-dot span {
   width: 15px;
   height: 15px;
   background-color: white;
-  border: 1px solid orange;
+  border: 1px solid orangered;
 }
 
 section.slider .owl-dots .owl-dot.active span {
-  background-color: orange;
+  background-color: orangered;
 }
 /* END SLIDER */
 
