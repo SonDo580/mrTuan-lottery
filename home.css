@@ -3,6 +3,7 @@ section.slider {
   padding: 0 10px;
   margin-top: 20px;
   position: relative;
+  z-index: 1;
 }
 
 section.slider .card {
