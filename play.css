@@ -1,5 +1,5 @@
 main {
- margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 main .lottery {
@@ -35,7 +35,7 @@ main .lottery .time span {
 main .lottery .prize {
   text-align: right;
   color: red;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   padding-right: 10px;
 }
 
@@ -119,7 +119,7 @@ main .chooseNumber .buttonsAll {
 
 main .chooseNumber .cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10px;
 }
 
@@ -219,7 +219,7 @@ main .chooseMode label {
   margin-bottom: 5px;
 }
 
-main .chooseMode input[type='radio'] {
+main .chooseMode input[type="radio"] {
   width: 24px;
   height: 24px;
   margin-bottom: 5px;
@@ -272,7 +272,6 @@ main .chooseMode .note {
 
 main .confirmAndPay > div {
   display: flex;
-  width: 100%;
   height: 130px;
   background-color: #dfefff;
   border: 1px solid #badafb;
@@ -302,11 +301,11 @@ main .confirmAndPay .price .row:last-child {
   border-top: 2px solid gray;
 }
 
-main .confirmAndPay span[data-name='discount'] {
+main .confirmAndPay span[data-name="discount"] {
   color: blueviolet;
 }
 
-main .confirmAndPay span[data-name='total'] {
+main .confirmAndPay span[data-name="total"] {
   color: red;
   font-weight: bold;
 }
@@ -334,4 +333,79 @@ main .confirmAndPay .pay p {
   font-size: 1.2rem;
   font-style: italic;
   padding: 0 10%;
+}
+
+@media screen and (max-width: 768px) {
+  main .chooseNumber .cards {
+    padding: 0 10px;
+  }
+
+  main .confirmAndPay img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .lottery {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 40px 40px;
+  }
+
+  main .lottery .img {
+    grid-row: 1 / -1;
+  }
+
+  main .lottery .time {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  main .lottery .prize {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  main .chooseMode li {
+    padding: 5px 5px;
+    font-size: 1rem;
+  }
+
+  main .chooseMode input[type="radio"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  main .chooseMode label img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+
+  main .chooseMode select {
+    font-size: 1rem;
+  }
+
+  main .chooseMode .note {
+    display: none;
+  }
+
+  main .confirmAndPay > div {
+    display: block;
+    height: auto;
+    padding: 0;
+    border: none;
+  }
+
+  main .confirmAndPay .price {
+    padding: 5px;
+    height: 130px;
+    border-bottom: 1px solid #badafb;
+  }
+
+  main .confirmAndPay .pay {
+    background-color: white;
+  }
 }
