@@ -382,6 +382,15 @@ footer .copyright {
   }
 
   /* HEADER */
+  header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+  }
+
   .header-left img {
     width: 200px;
     margin-left: 5px;
@@ -615,14 +624,6 @@ footer .copyright {
 
 @media screen and (max-width: 576px) {
   /* HEADER */
-  header {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: white;
-  }
-
   .header-left img {
     width: 40%;
   }
@@ -638,11 +639,6 @@ footer .copyright {
 
   .mobile-menu .logo img {
     width: 50%;
-  }
-
-  /* BANNER */
-  section.banner {
-    margin-top: 65px;
   }
 
   /* FIXED ICONS */
