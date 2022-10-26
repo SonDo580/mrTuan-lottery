@@ -343,6 +343,10 @@ main .confirmAndPay .pay p {
   main .confirmAndPay img {
     display: none;
   }
+
+  section.introduction {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -395,7 +399,7 @@ main .confirmAndPay .pay p {
   main .confirmAndPay > div {
     display: block;
     height: auto;
-    padding: 0;
+    padding: 0 10px;
     border: none;
   }
 
@@ -407,5 +411,6 @@ main .confirmAndPay .pay p {
 
   main .confirmAndPay .pay {
     background-color: white;
+    margin: 0 -10px;
   }
 }
