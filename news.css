@@ -7,36 +7,59 @@ main {
 }
 
 main h1 {
-    background-image: url(./image/news/headingBG.jpg);
-    background-size: cover;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    font-weight: normal;
+  background-image: url(./image/news/headingBG.jpg);
+  background-size: cover;
+  color: white;
+  font-weight: normal;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 15px;
-    row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  row-gap: 30px;
 }
 
 main a.card {
-    display: block;
-    text-decoration: none;
-    color: black;
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 main .card img {
-    width: 100%;
-} 
+  width: 100%;
+}
 
 main .card .description {
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
 main .card:hover .description {
-    color: blueviolet;
+  color: blueviolet;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.banner {
+    display: none;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  main h1 {
+    margin: 0 -10px;
+  }
 }
