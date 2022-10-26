@@ -64,6 +64,10 @@ main .interaction > span > a {
   text-align: right;
 }
 
+.mainContent .resultTable .ball-sum {
+  display: none;
+}
+
 .mainContent .resultTable .balls {
   display: flex;
 }
@@ -136,10 +140,6 @@ main .interaction > span > a {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    padding: 0 10px;
-  }
-
   .mainContent .resultTable tr th:first-child,
   .mainContent .resultTable tr td:first-child {
     display: none;
@@ -149,6 +149,10 @@ main .interaction > span > a {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 5px 10px;
+  }
+
+  .mainContent .introduction {
+    padding: 0 10px;
   }
 }
 
@@ -174,7 +178,6 @@ main .interaction > span > a {
     justify-content: space-between;
     align-items: center;
 
-    margin: 0 -10px;
     height: 80px;
     background-color: #f9cc4b;
   }
@@ -261,6 +264,30 @@ main .interaction > span > a {
 
   .mainContent > p {
     display: none;
+  }
+
+  .mainContent .resultTable th {
+    background-color: cornflowerblue;
+  }
+
+  .mainContent .resultTable tbody tr:nth-child(even) {
+    background-color: lightcyan;
+  }
+
+  .mainContent .resultTable .ball {
+    display: none;
+  }
+
+  .mainContent .resultTable .ball-sum {
+    display: block;
+  }
+
+  .mainContent .resultTable .ball-sum .green {
+    color: green;
+  }
+
+  .mainContent .resultTable .ball-sum .red {
+    color: darkgoldenrod;
   }
 
   .mainContent .playButton a {
