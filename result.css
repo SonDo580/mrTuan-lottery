@@ -5,6 +5,14 @@ main {
   margin-top: 0;
 }
 
+main .lottery {
+  display: none;
+}
+
+main .season {
+  display: none;
+}
+
 main .interaction > span > a {
   text-decoration: none;
   color: darkblue;
@@ -141,5 +149,131 @@ main .interaction > span > a {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.banner {
+    display: none;
+  }
+
+  main h1 {
+    display: none;
+  }
+
+  main .meta {
+    display: none;
+  }
+
+  main .interaction {
+    display: none;
+  }
+
+  main .lottery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 -10px;
+    height: 80px;
+    background-color: #f9cc4b;
+  }
+
+  main .lottery .left {
+    text-align: center;
+    width: 120px;
+  }
+
+  main .lottery img {
+    height: 80px;
+  }
+
+  main .lottery .right {
+    flex-grow: 1;
+  }
+
+  main .lottery .name {
+    margin-bottom: 0;
+  }
+
+  main .lottery .date {
+    color: blueviolet;
+    margin-top: 0;
+  }
+
+  main .lottery .prize {
+    color: red;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    margin: 5px 0;
+  }
+
+  main .lottery .prize span {
+    color: black;
+  }
+
+  main .season {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  main .season .balls {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  main .season .ball {
+    width: 35px;
+    aspect-ratio: 1 / 1;
+    background-image: url(./image/result/greenBall.png);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .season .ball.special {
+    background-image: url(./image/result/redBall.png);
+  }
+
+  main select#season {
+    padding: 5px 20px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  main select#season:active {
+    border-color: blue;
+  }
+
+  .mainContent .banner {
+    display: none;
+  }
+
+  .mainContent h2 {
+    display: none;
+  }
+
+  .mainContent > p {
+    display: none;
+  }
+
+  .mainContent .playButton a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+
+  main .keywords {
+    display: none;
+  }
+
+  main .comments {
+    display: none;
   }
 }
