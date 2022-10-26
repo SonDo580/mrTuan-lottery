@@ -16,7 +16,7 @@ main .interaction > span > a {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 480px;
+  aspect-ratio: 2 / 1;
 }
 
 .mainContent h2 {
@@ -89,7 +89,7 @@ main .interaction > span > a {
 
 .mainContent .video {
   width: 100%;
-  height: 500px;
+  aspect-ratio: 2 / 1;
   text-align: center;
 }
 
@@ -125,4 +125,21 @@ main .interaction > span > a {
 .mainContent .introduction h3 {
   text-align: left;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0 10px;
+  }
+
+  .mainContent .resultTable tr th:first-child,
+  .mainContent .resultTable tr td:first-child {
+    display: none;
+  }
+
+  .mainContent .playButton a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
 }
